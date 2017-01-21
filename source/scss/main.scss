@@ -1,0 +1,107 @@
+// Imports
+@import url('https://fonts.googleapis.com/css?family=Asar|Raleway');
+// Variables
+$folders: '/wordpress/wp-content/themes/glenrockhay/resources/';
+$imagewidth: 15vw;
+// Mixins
+
+
+//HTML Tags
+body {
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+  font-family: 'Asar', serif;
+  font-size: 50px;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+
+a {
+  font-family: 'Asar', serif;
+  font-variant: small-caps
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+//Classes
+.nav-item {
+  font-size: 4vh;
+  display: inline-block;
+  padding-left: 2vw;
+}
+
+.site-logo {
+  width: 30vw;
+  padding-left: 10vw;
+}
+
+.container {
+  width: 75vw;
+  margin-left: 10vw;
+}
+
+.grid {
+}
+
+.grid-item {
+  max-width: $imagewidth;
+  max-height: $imagewidth;
+  margin: 5px;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  .gallery-pics-l {
+    height: $imagewidth;
+  }
+  .gallery-pics-p {
+    width: $imagewidth;
+  }
+  .gallery-pics-s {
+    height: $imagewidth;
+  }
+}
+
+.grid-item--width2 {
+  max-width: 2 * $imagewidth;
+  .gallery-pics-l {
+    height: 2 * $imagewidth;
+  }
+}
+
+.grid-item--height2 {
+  max-height: 2 * $imagewidth;
+  .gallery-pics-p {
+    width: 2 * $imagewidth;
+  }
+  .gallery-pics-l {
+    height: 2 * $imagewidth;
+  }
+  .gallery-pics-s {
+    height: 2 * $imagewidth;
+  }
+}
+
+.gallery-pics {
+  object-fit: cover;
+  width: 100%;
+  vertical-align: middle;
+}
+
+
+//IDs
