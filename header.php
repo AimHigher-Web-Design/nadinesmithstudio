@@ -14,7 +14,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-<link rel="stylesheet" type="text/css" href="/wordpress/wp-content/themes/nadinesmithstudio/resources/css/main.css" />
+<link rel="stylesheet" type="text/css" href="/wp-content/themes/nadinesmithstudio/resources/css/main.css" />
 
 <?php wp_head(); ?>
 </head>

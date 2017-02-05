@@ -1,17 +1,14 @@
-@import url("https://fonts.googleapis.com/css?family=Asar|Raleway");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
 body {
-  width: 100%;
-  font-family: 'Raleway', sans-serif; }
+  background-image: url("/wp-content/themes/nadinesmithstudio/resources/images/background.jpg");
+  font: 400 12em "Raleway", Arial, sans-serif;
+  width: 100%; }
 
 h2 {
-  font-family: 'Asar', serif;
-  font-size: 50px;
-  font-weight: bold;
-  font-variant: small-caps; }
+  font: 1000 30em "Raleway", Arial, sans-serif; }
 
 a {
-  font-family: 'Asar', serif;
-  font-variant: small-caps; }
+  font: 400 12em "Raleway", Arial, sans-serif; }
 
 nav {
   display: flex;
@@ -36,3 +33,27 @@ header {
 .container {
   width: 75vw;
   margin-left: 10vw; }
+
+.home_nav .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none; }
+  .home_nav .menu li {
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    width: 30vw; }
+    .home_nav .menu li a {
+      font-size: 3em; }
+  .home_nav .menu .menu-item-17 {
+    background-image: url("/wp-content/themes/nadinesmithstudio/resources/images/jewellery.jpg");
+    background-position: 100% 100%; }
+  .home_nav .menu .menu-item-18 {
+    background-image: url("/wp-content/themes/nadinesmithstudio/resources/images/music.jpg");
+    background-position: 100% 100%; }
+  .home_nav .menu .menu-item-19 {
+    background-image: url("/wp-content/themes/nadinesmithstudio/resources/images/photography.jpg"); }
