@@ -14,3 +14,7 @@ wp-content/plugins/hello.php
 /readme.html
 /sitemap.xml
 /sitemap.xml.gz
+
+
+# ignore gulp dependencies and other node files
+node_modules

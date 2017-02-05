@@ -36,38 +36,3 @@ header {
 .container {
   width: 75vw;
   margin-left: 10vw; }
-
-.grid-item {
-  max-width: 15vw;
-  max-height: 15vw;
-  margin: 5px;
-  object-fit: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden; }
-  .grid-item .gallery-pics-l {
-    height: 15vw; }
-  .grid-item .gallery-pics-p {
-    width: 15vw; }
-  .grid-item .gallery-pics-s {
-    height: 15vw; }
-
-.grid-item--width2 {
-  max-width: 30vw; }
-  .grid-item--width2 .gallery-pics-l {
-    height: 30vw; }
-
-.grid-item--height2 {
-  max-height: 30vw; }
-  .grid-item--height2 .gallery-pics-p {
-    width: 30vw; }
-  .grid-item--height2 .gallery-pics-l {
-    height: 30vw; }
-  .grid-item--height2 .gallery-pics-s {
-    height: 30vw; }
-
-.gallery-pics {
-  object-fit: cover;
-  width: 100%;
-  vertical-align: middle; }

@@ -54,54 +54,6 @@ header {
   margin-left: 10vw;
 }
 
-.grid {
-}
-
-.grid-item {
-  max-width: $imagewidth;
-  max-height: $imagewidth;
-  margin: 5px;
-  object-fit: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  .gallery-pics-l {
-    height: $imagewidth;
-  }
-  .gallery-pics-p {
-    width: $imagewidth;
-  }
-  .gallery-pics-s {
-    height: $imagewidth;
-  }
-}
-
-.grid-item--width2 {
-  max-width: 2 * $imagewidth;
-  .gallery-pics-l {
-    height: 2 * $imagewidth;
-  }
-}
-
-.grid-item--height2 {
-  max-height: 2 * $imagewidth;
-  .gallery-pics-p {
-    width: 2 * $imagewidth;
-  }
-  .gallery-pics-l {
-    height: 2 * $imagewidth;
-  }
-  .gallery-pics-s {
-    height: 2 * $imagewidth;
-  }
-}
-
-.gallery-pics {
-  object-fit: cover;
-  width: 100%;
-  vertical-align: middle;
-}
 
 
 //IDs
