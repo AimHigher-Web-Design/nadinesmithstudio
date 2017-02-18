@@ -2,7 +2,7 @@
 /**
  * Boardwalk functions and definitions
  *
- * @package Boardwalk
+ * @package Nadine Smith Studio
  */
 
 /**
@@ -174,21 +174,21 @@ function boardwalk_scripts() {
 
 	wp_enqueue_style( 'boardwalk-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'boardwalk-pace', get_template_directory_uri() . '/js/pace.js', array( 'jquery' ), '1.0.0', true );
+	wp_enqueue_script( 'boardwalk-pace', get_template_directory_uri() . '/resources/js/pace.js', array( 'jquery' ), '1.0.0', true );
 
-	wp_enqueue_script( 'boardwalk-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
+	wp_enqueue_script( 'boardwalk-skip-link-focus-fix', get_template_directory_uri() . '/resources/js/skip-link-focus-fix.js', array(), '20130115', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
 	if ( ( is_search() && have_posts() ) || is_archive() || is_home() ) {
-		wp_enqueue_script( 'boardwalk-colors', get_template_directory_uri() . '/js/colors.js', array( 'jquery' ), '20141222', true );
+		wp_enqueue_script( 'boardwalk-colors', get_template_directory_uri() . '/resources/js/colors.js', array( 'jquery' ), '20141222', true );
 
-		wp_enqueue_script( 'boardwalk-mousewheel', get_template_directory_uri() . '/js/mousewheel.js', array( 'jquery' ), '3.1.12', true );
+		wp_enqueue_script( 'boardwalk-mousewheel', get_template_directory_uri() . '/resources/js/mousewheel.js', array( 'jquery' ), '3.1.12', true );
 	}
 
-	wp_enqueue_script( 'boardwalk-script', get_template_directory_uri() . '/js/boardwalk.js', array( 'jquery' ), '20141222', true );
+	wp_enqueue_script( 'boardwalk-script', get_template_directory_uri() . '/resources/js/boardwalk.js', array( 'jquery' ), '20141222', true );
 }
 add_action( 'wp_enqueue_scripts', 'boardwalk_scripts' );
 

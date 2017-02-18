@@ -2,7 +2,7 @@
 /**
  * The template for displaying 404 pages (not found).
  *
- * @package Boardwalk
+ * @package Nadine Smith Studio
  */
 
 get_header(); ?>

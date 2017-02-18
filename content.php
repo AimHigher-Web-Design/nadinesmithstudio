@@ -1,8 +1,8 @@
 <?php
 /**
- * @package Boardwalk
+ * @package Nadine Smith Studio
  */
- 
+
 $featured_image = get_the_post_thumbnail( get_the_ID(), 'boardwalk-featured-image' );
 if ( 1 != get_theme_mod( 'boardwalk_no_featured_image' ) ) {
 	$featured_image = boardwalk_get_image( get_the_ID(), 'boardwalk-featured-image' );

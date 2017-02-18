@@ -2,7 +2,7 @@
 /**
  * The template for displaying all single posts.
  *
- * @package Boardwalk
+ * @package Nadine Smith Studio
  */
 
 get_header(); ?>

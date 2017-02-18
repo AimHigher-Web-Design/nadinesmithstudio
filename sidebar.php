@@ -2,7 +2,7 @@
 /**
  * The sidebar containing the main widget area.
  *
- * @package Boardwalk
+ * @package Nadine Smith Studio
  */
 
 if ( ! is_active_sidebar( 'sidebar-1' ) && ! has_nav_menu( 'primary' ) ) {

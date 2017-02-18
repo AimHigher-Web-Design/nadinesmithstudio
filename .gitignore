@@ -17,4 +17,6 @@ wp-content/plugins/hello.php
 
 
 # ignore gulp dependencies and other node files
-node_modules
+node_modules/
+genericons/
+inc/

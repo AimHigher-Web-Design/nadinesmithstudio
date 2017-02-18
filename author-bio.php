@@ -2,7 +2,7 @@
 /**
  * The template for displaying Author bio
  *
- * @package Boardwalk
+ * @package Nadine Smith Studio
  */
 ?>
 

@@ -4,7 +4,7 @@
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package Boardwalk
+ * @package Nadine Smith Studio
  */
 ?>
 

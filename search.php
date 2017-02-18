@@ -2,7 +2,7 @@
 /**
  * The template for displaying search results pages.
  *
- * @package Boardwalk
+ * @package Nadine Smith Studio
  */
 
 get_header(); ?>
