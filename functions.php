@@ -54,7 +54,9 @@ function boardwalk_setup() {
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'boardwalk' ),
 		'social'  => __( 'Social Menu', 'boardwalk' ),
+		'home-menu'  => __( 'Home Menu'),
 	) );
+
 
 	/*
 	 * Switch default core markup for search form, comment form, and comments

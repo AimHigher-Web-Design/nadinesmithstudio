@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway");
+* {
+  box-sizing: border-box; }
+
 body {
-  background-image: url("/wp-content/themes/nadinesmithstudio/resources/images/background.jpg");
+  background-image: url("/images/background.jpg");
   font: 400 12em "Raleway", Arial, sans-serif;
   width: 100%; }
 
@@ -21,6 +24,9 @@ header {
   justify-content: flex-end;
   align-items: center; }
 
+.inner {
+  width: 80vw; }
+
 .nav-item {
   font-size: 4vh;
   display: inline-block;
@@ -34,26 +40,30 @@ header {
   width: 75vw;
   margin-left: 10vw; }
 
-.home_nav .menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  list-style: none; }
-  .home_nav .menu li {
-    align-items: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.home_nav {
+  width: 100%; }
+  .home_nav .menu {
     display: flex;
-    justify-content: center;
-    height: 90vh;
-    width: 30vw; }
-    .home_nav .menu li a {
-      font-size: 3em; }
-  .home_nav .menu .menu-item-17 {
-    background-image: url("/wp-content/themes/nadinesmithstudio/resources/images/jewellery.jpg");
-    background-position: 100% 100%; }
-  .home_nav .menu .menu-item-18 {
-    background-image: url("/wp-content/themes/nadinesmithstudio/resources/images/music.jpg");
-    background-position: 100% 100%; }
-  .home_nav .menu .menu-item-19 {
-    background-image: url("/wp-content/themes/nadinesmithstudio/resources/images/photography.jpg"); }
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none; }
+    .home_nav .menu li {
+      align-items: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      height: 90vh;
+      text-decoration: none;
+      width: 30vw; }
+      .home_nav .menu li a {
+        font-size: 3em;
+        text-decoration: none; }
+    .home_nav .menu .menu-item-17 {
+      background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/jewellery.jpg");
+      background-position: 100% 100%; }
+    .home_nav .menu .menu-item-18 {
+      background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/music.jpg");
+      background-position: 100% 100%; }
+    .home_nav .menu .menu-item-19 {
+      background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/photography.jpg"); }

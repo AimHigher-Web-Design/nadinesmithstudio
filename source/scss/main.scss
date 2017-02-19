@@ -1,8 +1,9 @@
 // Imports
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 // Variables
-$folders: '/wp-content/themes/nadinesmithstudio/resources/';
+$folders: '/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/';
 $imagewidth: 15vw;
+$inner: 80vw;
 
   //Fonts
   $font_light: 200 12em 'Raleway', Arial, sans-serif;
@@ -17,8 +18,12 @@ $imagewidth: 15vw;
 
 
 //HTML Tags
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background-image: url($folders + 'images/background.jpg');
+  background-image: url('/images/background.jpg');
   font: $font_regular;
   width: 100%;
 }
@@ -45,6 +50,10 @@ header {
 }
 
 //Classes
+.inner {
+  width: $inner;
+}
+
 .nav-item {
   font-size: 4vh;
   display: inline-block;
@@ -62,6 +71,7 @@ header {
 }
 
 .home_nav {
+  width: 100%;
   .menu {
     display: flex;
     flex-direction: row;
@@ -74,10 +84,12 @@ header {
       display: flex;
       justify-content: center;
       height: 90vh;
+      text-decoration: none;
       width: 30vw;
 
       a {
         font-size: 3em;
+        text-decoration: none;
       }
     }
 
