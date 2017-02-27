@@ -44,8 +44,8 @@ nav {
 
 header {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -60,14 +60,22 @@ header {
   padding-left: 2vw;
 }
 
-.site-logo {
-  width: 30vw;
-  padding-left: 10vw;
+.logo {
+  width: auto;
+
+  .site-logo {
+    height: 12vh;
+    margin: 2vh;
+  }
 }
 
 .container {
   width: 75vw;
   margin-left: 10vw;
+}
+
+.content-area {
+  margin-top: -130px;
 }
 
 .home_nav {
@@ -88,6 +96,7 @@ header {
       width: 30vw;
 
       a {
+        color: #fff;
         font-size: 3em;
         text-decoration: none;
       }
