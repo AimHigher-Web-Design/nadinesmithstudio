@@ -22,7 +22,7 @@
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'boardwalk' ); ?></a>
 			<?php if (is_front_page() == FALSE): ?>
-				<header id="masthead" class="site-header home-header" role="banner">
+				<header id="masthead" class="site-header" role="banner">
 					<div class="logo left-header">
 						<a href="/"><img class="site-logo" src="resources/images/logo.svg" /></a>
 					</div>
@@ -31,7 +31,7 @@
 					</nav>
 				</header><!-- #masthead -->
 			<?php else: ?>
-				<header id="masthead" class="site-header" role="banner">
+				<header id="masthead" class="site-header home-header" role="banner">
 					<div class="logo">
 						<a href="/"><img class="site-logo" src="wp-content/themes/nadinesmithstudio/resources/images/logo.svg" /></a>
 					</div>

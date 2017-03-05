@@ -619,9 +619,6 @@ input[type="submit"].search-submit {
 .site-footer {
 	overflow: hidden;
 	width: 100%;
-	min-height: 49px;
-	background: #fff;
-	border-top: 1px solid #d9d9d9;
 	color: rgba(0, 0, 0, 0.6);
 }
 .site-footer a {
