@@ -91,9 +91,7 @@ html {
 	-moz-box-sizing:    inherit;
 	box-sizing:         inherit;
 }
-body {
-	background: #fff;
-}
+
 article,
 aside,
 details,
@@ -565,9 +563,6 @@ input[type="submit"].search-submit {
 	padding-right: 12px;
 	padding-left: 24px;
 	width: 100%;
-	min-height: 73px;
-	background: #fff;
-	border-bottom: 1px solid #d9d9d9;
 	color: #000;
 }
 .has-sidebar .site-header {

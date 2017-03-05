@@ -3,7 +3,8 @@
   box-sizing: border-box; }
 
 body {
-  background-image: url("/images/background.jpg");
+  background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/background.jpg");
+  background-size: 100%;
   font: 400 12em "Raleway", Arial, sans-serif;
   width: 100%; }
 
@@ -19,10 +20,17 @@ nav {
   justify-content: center; }
 
 header {
+  background-color: #fff;
   display: flex;
   flex-direction: column;
+  height: 20vh;
+  min-height: 70px;
   justify-content: center;
   align-items: center; }
+
+header.home-header {
+  background-color: transparent;
+  border-bottom: none; }
 
 .inner {
   width: 80vw; }

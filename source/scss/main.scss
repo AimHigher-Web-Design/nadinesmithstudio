@@ -23,7 +23,8 @@ $inner: 80vw;
 }
 
 body {
-  background-image: url('/images/background.jpg');
+  background-image: url($folders + 'images/background.jpg');
+  background-size: 100%;
   font: $font_regular;
   width: 100%;
 }
@@ -43,13 +44,21 @@ nav {
 }
 
 header {
+  background-color: #fff;
   display: flex;
   flex-direction: column;
+  height: 20vh;
+    min-height: 70px;
   justify-content: center;
   align-items: center;
 }
 
 //Classes
+header.home-header {
+    background-color: transparent;
+    border-bottom: none;
+}
+
 .inner {
   width: $inner;
 }

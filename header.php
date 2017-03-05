@@ -21,18 +21,20 @@
 	<body <?php body_class(); ?>>
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'boardwalk' ); ?></a>
-			<header id="masthead" class="site-header" role="banner">
-				<?php if (is_front_page() == FALSE): ?>
+			<?php if (is_front_page() == FALSE): ?>
+				<header id="masthead" class="site-header home-header" role="banner">
 					<div class="logo left-header">
 						<a href="/"><img class="site-logo" src="resources/images/logo.svg" /></a>
 					</div>
 					<nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
 						<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 					</nav>
-				<?php else: ?>
+				</header><!-- #masthead -->
+			<?php else: ?>
+				<header id="masthead" class="site-header" role="banner">
 					<div class="logo">
 						<a href="/"><img class="site-logo" src="wp-content/themes/nadinesmithstudio/resources/images/logo.svg" /></a>
 					</div>
-				<?php endif ?>
-			</header><!-- #masthead -->
+				</header>
+			<?php endif ?>
 			<div id="content" class="site-content">
