@@ -1,16 +1,14 @@
 // Imports
-@import url('https://fonts.googleapis.com/css?family=Raleway');
 // Variables
 $folders: '/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/';
 $imagewidth: 15vw;
 $inner: 80vw;
 
   //Fonts
-  $font_light: 200 12em 'Raleway', Arial, sans-serif;
-  $font_regular: 400 12em 'Raleway', Arial, sans-serif;
-  $font_medium: 600 12em 'Raleway', Arial, sans-serif;
-  $font_bold: 800 12em 'Raleway', Arial, sans-serif;
-  $font_headings: 1000 30em 'Raleway', Arial, sans-serif;
+  $font_light: 300 12em 'brandon-grotesque', Arial, sans-serif;
+  $font_regular: 400 12em 'brandon-grotesque', Arial, sans-serif;
+  $font_bold: 700 12em 'brandon-grotesque', Arial, sans-serif;
+  $font_headings: $font_bold;
 
   //Colours
 

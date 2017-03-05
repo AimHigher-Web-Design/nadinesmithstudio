@@ -1,18 +1,17 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway");
 * {
   box-sizing: border-box; }
 
 body {
   background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/background.jpg");
   background-size: 100%;
-  font: 400 12em "Raleway", Arial, sans-serif;
+  font: 400 12em "brandon-grotesque", Arial, sans-serif;
   width: 100%; }
 
 h2 {
-  font: 1000 30em "Raleway", Arial, sans-serif; }
+  font: 700 12em "brandon-grotesque", Arial, sans-serif; }
 
 a {
-  font: 400 12em "Raleway", Arial, sans-serif; }
+  font: 400 12em "brandon-grotesque", Arial, sans-serif; }
 
 nav {
   display: flex;

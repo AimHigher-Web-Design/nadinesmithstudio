@@ -66,7 +66,6 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td {
 	border: 0;
-	font-family: inherit;
 	font-size: 100%;
 	font-style: inherit;
 	font-weight: inherit;
@@ -175,7 +174,6 @@ input,
 select,
 textarea {
 	color: #000;
-	font-family: Merriweather, serif;
 	font-size: 16px;
 	line-height: 1.5;
 	-ms-word-wrap: break-word;
@@ -187,7 +185,6 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: Lato, sans-serif;
 	font-weight: bold;
 }
 h1,
@@ -268,7 +265,6 @@ tt,
 var {
 	padding: 0 0.25em;
 	background: #f2f2f2;
-	font-family: "Source Code Pro", monospace;
 }
 pre {
 	overflow: auto;
@@ -602,7 +598,6 @@ input[type="submit"].search-submit {
 	padding-right: 12px;
 	margin: 0 0 -0.5857em;
 	color: rgba(0, 0, 0, 0.6);
-	font-family: Merriweather, serif;
 	font-size: 0.875em;
 	line-height: 2.3;
 	font-weight: normal;
@@ -1783,7 +1778,6 @@ body.single.filter-on:not(.title-with-content) .entry-thumbnail:before {
 	width: 100%;
 	border-top: 1px solid #f2f2f2;
 	color: rgba(0, 0, 0, 0.6);
-	font-family: Lato, sans-serif;
 	font-size: 0.875em;
 	line-height: 1.7142857;
 	font-weight: bold;
@@ -1821,7 +1815,6 @@ body.single.filter-on:not(.title-with-content) .entry-thumbnail:before {
 	background: transparent;
 	border-color: transparent;
 	color: rgba(0, 0, 0, 0.6);
-	font-family: Merriweather, serif;
 }
 
 /* Search */
@@ -1851,7 +1844,6 @@ body.single.filter-on:not(.title-with-content) .entry-thumbnail:before {
 .search-results .page-title span {
 	display: inline-block;
 	color: rgba(0, 0, 0, 0.6);
-	font-family: Merriweather, sans-serif;
 	font-size: 0.875em;
 	line-height: 1.7142857;
 	font-weight: normal;
@@ -1991,7 +1983,6 @@ body.single.filter-on:not(.title-with-content) .entry-thumbnail:before {
 }
 .comment-reply-title small {
 	float: right;
-	font-family: Merriweather, sans-serif;
 	font-size: 0.666667em;
 	line-height: 2.25;
 	letter-spacing: 0;
@@ -2055,7 +2046,6 @@ body.single.filter-on:not(.title-with-content) .entry-thumbnail:before {
 	margin-bottom: 24px;
 }
 .comment-author {
-	font-family: Lato, sans-serif;
 	font-weight: bold;
 	color: #000;
 }
@@ -2151,7 +2141,6 @@ body.single.filter-on:not(.title-with-content) .entry-thumbnail:before {
 	padding-right: 24px;
 	margin: 0 auto 24px;
 	width: 100%;
-	font-family: Lato, sans-serif;
 	font-size: 1.5em;
 	line-height: 1.5;
 	font-weight: bold;
@@ -2584,7 +2573,6 @@ div#jp-relatedposts:before {
 .hentry div#jp-relatedposts h3.jp-relatedposts-headline,
 .hentry div.sharedaddy h3.sd-title {
 	margin: 0 auto 24px;
-	font-family: Lato, sans-serif;
 	font-size: 1em;
 	line-height: 1.5;
 }
