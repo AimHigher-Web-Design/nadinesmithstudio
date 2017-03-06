@@ -26,12 +26,12 @@
 			</nav><!-- .social-navigation -->
 		<?php endif; ?>
 		<div class="site-info">
-			<span class="sep"> | </span>
+			<span class="sep"> </span>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 <?php wp_footer(); ?>
-<script type="text/javascript" src="wp-content/themes/nadinesmithstudio/resources/js/main.js"
+<script type="text/javascript" src="/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/js/main.js"></script>
 
 </body>
 </html>

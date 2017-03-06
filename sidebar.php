@@ -13,7 +13,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) && ! has_nav_menu( 'primary' ) ) {
 <div id="sidebar" class="sidebar" aria-hidden="true">
 	<div class="sidebar-content">
 		<?php if ( has_nav_menu( 'primary' ) ) : ?>
-			<nav id="site-navigation" class="main-navigation" role="navigation">
+			<!-- <nav id="site-navigation" class="main-navigation" role="navigation">
 				<h1 class="menu-title"><?php _e( 'Menu', 'boardwalk' ); ?></h1>
 				<?php
 					wp_nav_menu( array(
@@ -22,7 +22,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) && ! has_nav_menu( 'primary' ) ) {
 						'menu_class'      => 'clear',
 					) );
 				?>
-			</nav><!-- #site-navigation -->
+			</nav>
 		<?php endif; ?>
 
 		<?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>

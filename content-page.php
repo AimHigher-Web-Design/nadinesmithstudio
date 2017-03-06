@@ -13,7 +13,7 @@
 		</div><!-- .entry-thumbnail -->
 	<?php endif; ?>
 
-	<?php the_title( '<header class="entry-header"><h1 class="entry-title">', '</h1></header>' ); ?>
+	<?php the_title( '<div class="entry-header"><h1 class="entry-title">', '</h1></div>' ); ?>
 
 	<div class="entry-content">
 		<?php the_content(); ?>

@@ -21,6 +21,7 @@
     "gulp-sass": "^2.3.2"
   },
   "dependencies": {
-    "packery": "^2.1.1"
+    "packery": "^2.1.1",
+    "gulp-install": "~0.6.0"
   }
 }

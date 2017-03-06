@@ -3,37 +3,78 @@
 
 body {
   background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/background.jpg");
+  background-attachment: fixed;
   background-size: 100%;
-  font: 400 12em "brandon-grotesque", Arial, sans-serif;
+  background-position: center top;
+  font: 400 1em "brandon-grotesque", Arial, sans-serif;
   width: 100%; }
 
 h2 {
-  font: 700 12em "brandon-grotesque", Arial, sans-serif; }
+  font: 700 1em "brandon-grotesque", Arial, sans-serif; }
 
 a {
-  font: 400 12em "brandon-grotesque", Arial, sans-serif; }
+  font: 400 1em "brandon-grotesque", Arial, sans-serif;
+  text-decoration: none; }
 
 nav {
   display: flex;
   flex-direction: row;
   justify-content: center; }
 
-header {
-  background-color: #fff;
+header.site-header {
+  background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/background.jpg");
+  background-size: 100%;
+  background-position: center top;
+  border: none;
   display: flex;
   align-items: center;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
   height: 20vh;
   min-height: 70px; }
+  header.site-header .menu-home-page-container {
+    width: 100%; }
+  header.site-header.home-header {
+    justify-content: center; }
+  header.site-header .primary-navigation {
+    width: 50vw; }
+  header.site-header .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    header.site-header .menu li {
+      display: inline-block;
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+      padding: 1vw;
+      text-align: center;
+      width: 30%; }
+      header.site-header .menu li.menu-item-17 {
+        background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/jewellery-horizontal.jpg");
+        background-position: 0 50%;
+        background-size: cover; }
+      header.site-header .menu li.menu-item-18 {
+        background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/music.jpg");
+        background-position: 100% 67%;
+        background-size: cover; }
+      header.site-header .menu li.menu-item-19 {
+        background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/photography.jpg");
+        background-position: 0 38%;
+        background-size: cover; }
+      header.site-header .menu li:active, header.site-header .menu li:hover, header.site-header .menu li:focus, header.site-header .menu li.active {
+        filter: grayscale(0);
+        -webkit-filter: grayscale(0); }
+        header.site-header .menu li:active a, header.site-header .menu li:hover a, header.site-header .menu li:focus a, header.site-header .menu li.active a {
+          color: #fff; }
+      header.site-header .menu li a {
+        color: rgba(0, 0, 0, 0.7);
+        display: block;
+        font-size: 2.5vw;
+        width: 100%; }
 
 footer {
   background: transparent;
   min-height: 10vh; }
-
-header.home-header {
-  background-color: transparent;
-  border-bottom: none; }
 
 .inner {
   width: 80vw; }
@@ -49,16 +90,21 @@ header.home-header {
     height: 12vh;
     margin: 2vh; }
 
+.menu {
+  list-style: none; }
+
 .container {
   width: 75vw;
   margin-left: 10vw; }
 
 .site-content {
-  margin-top: 20vh; }
+  margin-top: 20vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px; }
 
 div.content-home {
-  height: 80vh;
-  margin-top: -20vh; }
+  height: 80vh; }
 
 .home_nav {
   width: 100%; }
@@ -88,6 +134,29 @@ div.content-home {
       background-position: 100% 100%; }
     .home_nav .menu .menu-item-19 {
       background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/photography.jpg"); }
+
+.entry-content {
+  width: 1000px; }
+
+table.etsy-shop-listing-table {
+  width: 100%; }
+  table.etsy-shop-listing-table tr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px; }
+    table.etsy-shop-listing-table tr td {
+      padding: 10px; }
+  table.etsy-shop-listing-table .etsy-shop-listing-card {
+    background-color: transparent;
+    border: none; }
+    table.etsy-shop-listing-table .etsy-shop-listing-card .etsy-shop-listing-title {
+      font-size: 1.5em;
+      height: 5em; }
+    table.etsy-shop-listing-table .etsy-shop-listing-card .etsy-shop-listing-price {
+      color: #fff;
+      position: relative;
+      top: -11em; }
 
 footer.home-footer {
   background: transparent; }
