@@ -17,24 +17,42 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<div class="site-main">
-			<?php
 
-			$query = new WP_Query(array(
-    'post_type' => 'Products',
-    'post_status' => 'publish'
-));
+			<div class="products category-jewellery">
 
+				<?php
+			$type = 'etsy_products';
+			$args=array(
+			  'post_type' => $type,
+			  'post_status' => 'publish',
+			  'posts_per_page' => -1,
+			  'caller_get_posts'=> 1,
+				'etsy_category' => 'Bracelet'
+			);
+			$my_query = null;
+			$my_query = new WP_Query($args);
+			if( $my_query->have_posts() ) {
+			  while ($my_query->have_posts()) : $my_query->the_post(); ?>
 
-while ($query->have_posts()) {
-    $query->the_post();
-    $post_id = get_the_ID();
-    echo $post_id;
-    echo "<br>";
-}
+					<div class="product-item jewellery">
+						<div class="product-item-image">
+							<?php echo get_the_post_thumbnail( get_the_ID()); ?>
+							<div class="product-item-price">
+								$ <?php echo get_post_meta( get_the_ID(), '_etsy_product_price', true ); ?>
+							</div>
+						</div>
+						<div class="product-item-name">
+							<p><?php the_title(); ?></p>
+						</div>
+					</div>
 
-wp_reset_query();
+			    <?php
+			  endwhile;
+			}
+			wp_reset_query();  // Restore global post data stomped by the_post().
+			?>
 
-		 ?>
+		</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
