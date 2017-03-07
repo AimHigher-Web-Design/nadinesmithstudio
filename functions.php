@@ -213,17 +213,3 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
-
-
-
-
-//Displaying Jewellery Information
-public function products_category($atts, $content = null, $category) {
-	$atts = shortcode_atts( array(
-		'id'       => '',
-		'external' => '',
-		'title'    => '',
-	), $atts, 'product_link' );
-
-	$product = get_post($atts[$category])
-}
