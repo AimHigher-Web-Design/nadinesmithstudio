@@ -1,7 +1,7 @@
 // Imports
 
 // Variables
-$folders: '/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/';
+$folders: '/wp-content/themes/nadinesmithstudio/resources/';
 $imagewidth: 15vw;
 $inner: 80vw;
 
@@ -23,6 +23,10 @@ $inner: 80vw;
 }
 
 //HTML Tags
+::-webkit-scrollbar {
+  display: none;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -163,8 +167,8 @@ footer {
   margin-left: 10vw;
 }
 
-.site-content {
-  margin-top: 20vh;
+.content-area {
+  // margin-top: 20vh;
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
@@ -173,6 +177,7 @@ footer {
 div.content-home {
   height: 80vh;
   // margin-top: -20vh;
+  width: 100%;
 }
 
 .home_nav {
@@ -182,6 +187,8 @@ div.content-home {
     flex-direction: row;
     justify-content: space-around;
     list-style: none;
+    -webkit-padding-start: 0;
+
     li {
       align-items: center;
       background-repeat: no-repeat;

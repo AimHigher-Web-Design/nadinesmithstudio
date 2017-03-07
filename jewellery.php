@@ -17,17 +17,25 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<div class="site-main">
-
 			<?php
-				$args = array( 'post_type' => 'products', 'posts_per_page' => 10 );
-				$loop = new WP_Query( $args );
-				while ( $loop->have_posts() ) : $loop->the_post();
-				  the_title();
-				  echo '<div class="entry-content">';
-				  the_content();
-				  echo '</div>';
-				endwhile;
-			?>
+
+			$query = new WP_Query(array(
+    'post_type' => 'Products',
+    'post_status' => 'publish'
+));
+
+
+while ($query->have_posts()) {
+    $query->the_post();
+    $post_id = get_the_ID();
+    echo $post_id;
+    echo "<br>";
+}
+
+wp_reset_query();
+
+		 ?>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

@@ -1,8 +1,11 @@
+::-webkit-scrollbar {
+  display: none; }
+
 * {
   box-sizing: border-box; }
 
 body {
-  background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/background.jpg");
+  background-image: url("/wp-content/themes/nadinesmithstudio/resources/images/background.jpg");
   background-attachment: fixed;
   background-size: 100%;
   background-position: center top;
@@ -22,7 +25,7 @@ nav {
   justify-content: center; }
 
 header.site-header {
-  background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/background.jpg");
+  background-image: url("/wp-content/themes/nadinesmithstudio/resources/images/background.jpg");
   background-size: 100%;
   background-position: center top;
   border: none;
@@ -50,15 +53,15 @@ header.site-header {
       text-align: center;
       width: 30%; }
       header.site-header .menu li.menu-item-17 {
-        background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/jewellery-horizontal.jpg");
+        background-image: url("/wp-content/themes/nadinesmithstudio/resources/images/jewellery-horizontal.jpg");
         background-position: 0 50%;
         background-size: cover; }
       header.site-header .menu li.menu-item-18 {
-        background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/music.jpg");
+        background-image: url("/wp-content/themes/nadinesmithstudio/resources/images/music.jpg");
         background-position: 100% 67%;
         background-size: cover; }
       header.site-header .menu li.menu-item-19 {
-        background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/photography.jpg");
+        background-image: url("/wp-content/themes/nadinesmithstudio/resources/images/photography.jpg");
         background-position: 0 38%;
         background-size: cover; }
       header.site-header .menu li:active, header.site-header .menu li:hover, header.site-header .menu li:focus, header.site-header .menu li.active {
@@ -97,14 +100,14 @@ footer {
   width: 75vw;
   margin-left: 10vw; }
 
-.site-content {
-  margin-top: 20vh;
+.content-area {
   margin-left: auto;
   margin-right: auto;
   width: 1200px; }
 
 div.content-home {
-  height: 80vh; }
+  height: 80vh;
+  width: 100%; }
 
 .home_nav {
   width: 100%; }
@@ -112,7 +115,8 @@ div.content-home {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    list-style: none; }
+    list-style: none;
+    -webkit-padding-start: 0; }
     .home_nav .menu li {
       align-items: center;
       background-repeat: no-repeat;
@@ -127,13 +131,13 @@ div.content-home {
         font-size: 3em;
         text-decoration: none; }
     .home_nav .menu .menu-item-17 {
-      background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/jewellery.jpg");
+      background-image: url("/wp-content/themes/nadinesmithstudio/resources/images/jewellery.jpg");
       background-position: 100% 100%; }
     .home_nav .menu .menu-item-18 {
-      background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/music.jpg");
+      background-image: url("/wp-content/themes/nadinesmithstudio/resources/images/music.jpg");
       background-position: 100% 100%; }
     .home_nav .menu .menu-item-19 {
-      background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/photography.jpg"); }
+      background-image: url("/wp-content/themes/nadinesmithstudio/resources/images/photography.jpg"); }
 
 .entry-content {
   width: 1000px; }

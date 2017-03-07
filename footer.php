@@ -31,7 +31,7 @@
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 <?php wp_footer(); ?>
-<script type="text/javascript" src="/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/js/main.js"></script>
+<script type="text/javascript" src="/wp-content/themes/nadinesmithstudio/resources/js/main.js"></script>
 
 </body>
 </html>
