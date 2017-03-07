@@ -140,13 +140,22 @@ div.content-home {
 .entry-content {
   width: 1000px; }
 
+.filter-buttons {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 2vw; }
+  .filter-buttons input {
+    margin: 10px 20px; }
+
 div.products.category-jewellery {
   display: flex;
-  justify-content: space-around;
   flex-direction: row;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  justify-content: center; }
   div.products.category-jewellery .product-item.jewellery {
-    margin: 5px; }
+    margin: 2vw; }
     div.products.category-jewellery .product-item.jewellery:hover, div.products.category-jewellery .product-item.jewellery:focus {
       filter: grayscale(100%);
       -webkit-filter: grayscale(100%); }
