@@ -5,6 +5,7 @@
   box-sizing: border-box; }
 
 body {
+  background-color: #e6e7df;
   background-attachment: fixed;
   background-size: 100%;
   background-position: center top;
@@ -147,7 +148,16 @@ div.content-home {
   justify-content: flex-end;
   margin-right: 2vw; }
   .filter-buttons input {
-    margin: 10px 20px; }
+    background-color: transparent;
+    border: none;
+    color: #252525;
+    cursor: pointer;
+    margin: 0 20px;
+    padding: 0;
+    width: 60px; }
+    .filter-buttons input:hover, .filter-buttons input:focus, .filter-buttons input:active {
+      font-weight: bold;
+      text-decoration: underline; }
 
 div.products.category-jewellery {
   display: flex;

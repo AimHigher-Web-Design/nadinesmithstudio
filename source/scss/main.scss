@@ -32,7 +32,8 @@ $inner: 80vw;
 }
 
 body {
-  // background-image: url($folders + 'images/background.jpg');
+  background-color: #e6e7df;
+    // background-image: url($folders + 'images/background.jpg');
     background-attachment: fixed;
     background-size: 100%;
     background-position: center top;
@@ -234,7 +235,18 @@ div.content-home {
   margin-right: 2vw;
 
     input {
-      margin: 10px 20px;
+      background-color: transparent;
+      border: none;
+      color: #252525;
+      cursor: pointer;
+      margin: 0 20px;
+      padding: 0;
+      width: 60px;
+
+      &:hover, &:focus, &:active {
+        font-weight: bold;
+        text-decoration: underline;
+      }
     }
 }
 
