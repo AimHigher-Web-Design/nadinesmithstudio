@@ -59,12 +59,14 @@ get_header(); ?>
 			  		while ($my_query->have_posts()) : $my_query->the_post(); ?>
 
 					<div class="product-item jewellery">
-						<div class="product-item-image">
-							<?php echo get_the_post_thumbnail( get_the_ID()); ?>
-							<div class="product-item-price">
-								$ <?php echo get_post_meta( get_the_ID(), '_etsy_product_price', true ); ?>
+						<a href="<?php echo get_post_permalink(get_the_ID()); ?>">
+							<div class="product-item-image">
+								<?php echo get_the_post_thumbnail( get_the_ID()); ?>
+								<div class="product-item-price">
+									$ <?php echo get_post_meta( get_the_ID(), '_etsy_product_price', true ); ?>
+								</div>
 							</div>
-						</div>
+						</a>
 						<div class="product-item-name">
 							<p><?php the_title(); ?></p>
 						</div>
