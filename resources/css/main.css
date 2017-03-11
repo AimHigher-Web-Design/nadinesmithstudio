@@ -139,7 +139,9 @@ div.content-home {
     .home_nav .menu .menu-item-19 {
       background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/photography.jpg"); }
 
-.entry-content {
+.entry-content, article.etsy_products {
+  margin-left: auto;
+  margin-right: auto;
   width: 1000px; }
 
 .filter-buttons {
@@ -159,6 +161,17 @@ div.content-home {
     .filter-buttons input:hover, .filter-buttons input:focus, .filter-buttons input:active {
       font-weight: bold;
       text-decoration: underline; }
+
+article.etsy_products {
+  display: flex;
+  flex-direction: row; }
+  article.etsy_products .entry-thumbnail {
+    width: 50%; }
+    article.etsy_products .entry-thumbnail img {
+      height: auto;
+      width: 100%; }
+  article.etsy_products .jewellery-content {
+    width: 50%; }
 
 div.products.category-jewellery {
   display: flex;
