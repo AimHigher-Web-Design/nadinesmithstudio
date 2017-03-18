@@ -16,6 +16,7 @@ h2 {
   font: 700 1em "brandon-grotesque", Arial, sans-serif; }
 
 a {
+  color: rgba(0, 0, 0, 0.7);
   font: 400 1em "brandon-grotesque", Arial, sans-serif;
   text-decoration: none; }
 
@@ -39,6 +40,7 @@ header.site-header {
   header.site-header.home-header {
     justify-content: center; }
   header.site-header .primary-navigation {
+    flex-wrap: wrap;
     width: 50vw; }
   header.site-header .menu {
     display: flex;
@@ -72,6 +74,18 @@ header.site-header {
         color: rgba(0, 0, 0, 0.7);
         display: block;
         font-size: 2.5vw; }
+    header.site-header .menu ul {
+      display: none; }
+  header.site-header .sidebar {
+    width: 100%; }
+    header.site-header .sidebar .widget_custom_menu_wizard ul.menu-widget {
+      display: inline;
+      display: flex;
+      flex-direction: row; }
+      header.site-header .sidebar .widget_custom_menu_wizard ul.menu-widget li {
+        margin-left: 20px; }
+        header.site-header .sidebar .widget_custom_menu_wizard ul.menu-widget li a {
+          padding: 5px; }
 
 footer {
   background: transparent;
@@ -171,7 +185,16 @@ article.etsy_products {
       height: auto;
       width: 100%; }
   article.etsy_products .jewellery-content {
+    padding: 0 10px;
     width: 50%; }
+    article.etsy_products .jewellery-content .entry-header {
+      text-align: right; }
+
+.widget_custom_menu_wizard ul {
+  list-style-type: none; }
+
+.sidebar-content > li {
+  list-style-type: none; }
 
 div.products.category-jewellery {
   display: flex;

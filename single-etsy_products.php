@@ -8,7 +8,7 @@ get_header(); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php if ( has_post_thumbnail() && ! has_post_format( 'video' ) ) : ?>
 		<div class="entry-thumbnail">
-			<?php echo get_the_post_thumbnail( get_the_ID(), 'boardwalk-hero-image' ); ?>
+			<?php echo get_the_post_thumbnail( get_the_ID() ); ?>
 		</div><!-- .entry-thumbnail -->
 	<?php endif; ?>
 
@@ -18,17 +18,13 @@ get_header(); ?>
 	</header><!-- .entry-header -->
 
 	<div class="post-content">
-		<?php the_content(); ?>
-		<?php
-			wp_link_pages( array(
-				'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'boardwalk' ) . '</span>',
-				'after'       => '</div>',
-				'link_before' => '<span>',
-				'link_after'  => '</span>',
-				'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'boardwalk' ) . ' </span>%',
-				'separator'   => '<span class="screen-reader-text">, </span>',
-			) );
-		?>
+
+		<?php while ( have_posts() ) : the_post(); ?>
+
+					<?php the_content(); ?>
+
+		<?php endwhile; // end of the loop. ?>
+
 	</div><!-- .entry-content -->
 </div>
 
