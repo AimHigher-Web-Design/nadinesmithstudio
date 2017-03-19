@@ -20,7 +20,7 @@ get_header(); ?>
 
 			<form action="" method="GET" class="filter-buttons">
 				<span>Filter by:</span>
-				<input type="submit" value="Jewellery" name="jewellery-type"></input>
+				<input type="submit" value="See All" name="jewellery-type"></input>
 				<input type="submit" value="Bracelet" name="jewellery-type"></input>
 				<input type="submit" value="Necklace" name="jewellery-type"></input>
 				<input type="submit" value="Earrings" name="jewellery-type"></input>
@@ -29,7 +29,7 @@ get_header(); ?>
 			<div class="products category-jewellery">
 
 				<?php
-					$prodCat = "Jewellery";
+					$prodCat = "See All";
 
 					// echo $prodCat.before;
 

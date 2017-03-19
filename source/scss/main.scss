@@ -1,7 +1,8 @@
 // Imports
+@import "booking-form.scss";
 
 // Variables
-$folders: '/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/';
+$folders: '/wp-content/themes/nadinesmithstudio/resources/';
 $imagewidth: 15vw;
 $inner: 80vw;
 
@@ -41,6 +42,10 @@ body {
   width: 100%;
 }
 
+h1 {
+  font-size: 2em;
+}
+
 h2 {
   font: $font_headings;
 }
@@ -53,8 +58,16 @@ a {
 
 nav {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+    flex-direction: row;
+    justify-content: center;
+
+  ul {
+    list-style-type: none;
+  }
+}
+
+li.widget {
+  list-style-type: none;
 }
 
 header.site-header {
@@ -158,14 +171,23 @@ header.site-header {
   }
 }
 
+.site-content {
+  min-height: 80vh;
+
+  .content-area {
+    min-height: 70vh;
+  }
+}
+
 footer {
   background: transparent;
-  min-height: 10vh;
+  height: 10vh;
 }
 
 //Classes
 
 .inner {
+  margin: 0 auto;
   width: $inner;
 }
 
@@ -254,6 +276,35 @@ div.content-home {
   }
 }
 
+article.has-post-thumbnail {
+  h1 {
+      text-align: right;
+  }
+
+  .entry-thumbnail {
+    display: inline-block;
+    width: 49.5%;
+
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+  .entry-content {
+    display: inline-block;
+    padding: 0 0 0 30px;
+    text-align: right;
+    vertical-align: top;
+    width: 50%;
+  }
+}
+
+.Contact_form {
+  h2 {
+    // display: none;
+  }
+}
+
 .entry-content, article.etsy_products {
   margin-left: auto;
   margin-right: auto;
@@ -295,6 +346,16 @@ article.etsy_products {
       width: 100%;
     }
   }
+
+    h1 {
+      font-size: 2em;
+      text-align: right;
+    }
+
+    .post-content {
+      padding: 0 0 0 30px;
+      text-align: right;
+    }
 
   .jewellery-content {
     padding: 0 10px;
@@ -371,6 +432,35 @@ div.products.category-jewellery {
 
 footer.home-footer {
   background: transparent;
+}
+
+footer {
+  .inner {
+    display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+  }
+
+  nav {
+    #menu-footer-menu {
+      display: flex;
+        flex-direction: row;
+
+        li {
+          a {
+            padding: 5px 10px;
+          }
+        }
+    }
+  }
+
+  .aimhigher-logo {
+    img {
+      filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+    }
+  }
 }
 
 //IDs

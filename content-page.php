@@ -7,13 +7,13 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<?php the_title( '<div class="entry-header"><h1 class="entry-title">', '</h1></div>' ); ?>
+		
 	<?php if ( has_post_thumbnail() ) : ?>
 		<div class="entry-thumbnail">
 			<?php echo get_the_post_thumbnail( get_the_ID(), 'boardwalk-hero-image' ); ?>
 		</div><!-- .entry-thumbnail -->
 	<?php endif; ?>
-
-	<?php the_title( '<div class="entry-header"><h1 class="entry-title">', '</h1></div>' ); ?>
 
 	<div class="entry-content">
 		<?php the_content(); ?>

@@ -215,7 +215,33 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/jetpack.php';
 
 
+//Submenu widget area
 register_sidebar( array(
     'id' => 'submenu',
     'name' => 'Sub-menu'
 ));
+
+//Contact form widget area
+register_sidebar( array(
+    'id' => 'contact',
+    'name' => 'Contact Form'
+));
+
+//Open Booking page as popup
+add_filter( 'nav_menu_link_attributes', 'themeprefix_menu_attribute_add', 10, 3 );
+function themeprefix_menu_attribute_add( $atts, $item, $args )
+{
+  // Set the menu ID
+  $music_booking = 568;
+	$photography_booking = 569;
+
+  // Conditionally match the ID and add the attribute and value
+  if ($item->ID == $music_booking) {
+    $atts['id'] = 'Setmore_button_iframe';
+  }
+	else if ($item->ID == $photography_booking) {
+		$atts['id'] = 'Setmore_button_iframe';
+	};
+  //Return the new attribute
+  return $atts;
+}

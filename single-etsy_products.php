@@ -25,6 +25,17 @@ get_header(); ?>
 
 		<?php endwhile; // end of the loop. ?>
 
+		<?php
+			$etsyprice = get_post_meta(get_the_ID(), '_etsy_product_price', true);
+			echo '<h2>$ ' . $etsyprice . ' AUD</h2>';
+		?>
+
+		<?php
+			$etsylink = get_post_meta(get_the_ID(), '_etsy_product_url', true);
+			echo '<p><a href="' . $etsylink . '" target="_blank"><button type="button">Buy Now</button></a></p>
+			<small>Note. This will redirect you to our store on Etsy</small>';
+		?>
+
 	</div><!-- .entry-content -->
 </div>
 

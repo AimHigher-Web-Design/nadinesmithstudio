@@ -1,3 +1,15 @@
+.nf-form-wrap .nf-form-fields-required {
+  display: none; }
+
+.nf-form-wrap input {
+  max-width: 300px; }
+
+.nf-form-wrap textarea {
+  max-width: 500px; }
+
+.menu-item-587, .menu-item-585, .menu-item-586 {
+  display: none; }
+
 ::-webkit-scrollbar {
   display: none; }
 
@@ -12,6 +24,9 @@ body {
   font: 400 1em "brandon-grotesque", Arial, sans-serif;
   width: 100%; }
 
+h1 {
+  font-size: 2em; }
+
 h2 {
   font: 700 1em "brandon-grotesque", Arial, sans-serif; }
 
@@ -24,6 +39,11 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: center; }
+  nav ul {
+    list-style-type: none; }
+
+li.widget {
+  list-style-type: none; }
 
 header.site-header {
   background-size: 100%;
@@ -54,15 +74,15 @@ header.site-header {
       text-align: center;
       width: 30%; }
       header.site-header .menu li.menu-item-17 {
-        background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/jewellery-horizontal.jpg");
+        background-image: url("/wp-content/themes/nadinesmithstudio/resources/images/jewellery-horizontal.jpg");
         background-position: 0 50%;
         background-size: cover; }
       header.site-header .menu li.menu-item-18 {
-        background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/music.jpg");
+        background-image: url("/wp-content/themes/nadinesmithstudio/resources/images/music.jpg");
         background-position: 100% 67%;
         background-size: cover; }
       header.site-header .menu li.menu-item-19 {
-        background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/photography.jpg");
+        background-image: url("/wp-content/themes/nadinesmithstudio/resources/images/photography.jpg");
         background-position: 0 38%;
         background-size: cover; }
       header.site-header .menu li:active, header.site-header .menu li:hover, header.site-header .menu li:focus, header.site-header .menu li.active {
@@ -87,11 +107,17 @@ header.site-header {
         header.site-header .sidebar .widget_custom_menu_wizard ul.menu-widget li a {
           padding: 5px; }
 
+.site-content {
+  min-height: 80vh; }
+  .site-content .content-area {
+    min-height: 70vh; }
+
 footer {
   background: transparent;
-  min-height: 10vh; }
+  height: 10vh; }
 
 .inner {
+  margin: 0 auto;
   width: 80vw; }
 
 .nav-item {
@@ -147,13 +173,30 @@ div.content-home {
       .home_nav .menu li ul {
         display: none; }
     .home_nav .menu .menu-item-17 {
-      background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/jewellery.jpg");
+      background-image: url("/wp-content/themes/nadinesmithstudio/resources/images/jewellery.jpg");
       background-position: 100% 100%; }
     .home_nav .menu .menu-item-18 {
-      background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/music.jpg");
+      background-image: url("/wp-content/themes/nadinesmithstudio/resources/images/music.jpg");
       background-position: 100% 100%; }
     .home_nav .menu .menu-item-19 {
-      background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/photography.jpg"); }
+      background-image: url("/wp-content/themes/nadinesmithstudio/resources/images/photography.jpg"); }
+
+article.has-post-thumbnail h1 {
+  text-align: right; }
+
+article.has-post-thumbnail .entry-thumbnail {
+  display: inline-block;
+  width: 49.5%; }
+  article.has-post-thumbnail .entry-thumbnail img {
+    height: auto;
+    width: 100%; }
+
+article.has-post-thumbnail .entry-content {
+  display: inline-block;
+  padding: 0 0 0 30px;
+  text-align: right;
+  vertical-align: top;
+  width: 50%; }
 
 .entry-content, article.etsy_products {
   margin-left: auto;
@@ -186,6 +229,12 @@ article.etsy_products {
     article.etsy_products .entry-thumbnail img {
       height: auto;
       width: 100%; }
+  article.etsy_products h1 {
+    font-size: 2em;
+    text-align: right; }
+  article.etsy_products .post-content {
+    padding: 0 0 0 30px;
+    text-align: right; }
   article.etsy_products .jewellery-content {
     padding: 0 10px;
     width: 50%; }
@@ -238,3 +287,19 @@ div.products.category-jewellery {
 
 footer.home-footer {
   background: transparent; }
+
+footer .inner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between; }
+
+footer nav #menu-footer-menu {
+  display: flex;
+  flex-direction: row; }
+  footer nav #menu-footer-menu li a {
+    padding: 5px 10px; }
+
+footer .aimhigher-logo img {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%); }
