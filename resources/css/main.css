@@ -144,6 +144,8 @@ div.content-home {
         text-align: center;
         text-decoration: none;
         width: 30vw; }
+      .home_nav .menu li ul {
+        display: none; }
     .home_nav .menu .menu-item-17 {
       background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/jewellery.jpg");
       background-position: 100% 100%; }
