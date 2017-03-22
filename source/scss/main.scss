@@ -6,6 +6,26 @@ $tablet_wide: 768px;
 $desktop: 960px;
 $desktop_wide: 1260px;
 
+//Variables
+$folders: '/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/';
+
+//Fonts
+$font_light: 300 1em 'brandon-grotesque', Arial, sans-serif;
+$font_regular: 400 1em 'brandon-grotesque', Arial, sans-serif;
+$font_bold: 700 1em 'brandon-grotesque', Arial, sans-serif;
+$font_headings: $font_bold;
+
+//Colours
+
+// Mixins
+@mixin rotate-images($deg) {
+transform: rotate($deg);
+  -webkit-transform: rotate($deg);
+  -moz-transform: rotate($deg);
+  -ms-transform: rotate($deg);
+  -o-transform: rotate($deg);
+}
+
 //Include Files
 @import 'booking-form';
 @import '320';

@@ -3,7 +3,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 
 //File Paths
-var sassFiles = 'source/scss/**/*.scss',
+var sassFiles = 'source/scss/main.scss',
     cssFiles = 'resources/css/'
 
 //Compile sass into css

@@ -1,27 +1,9 @@
-// Imports
-@import "booking-form.scss";
-
 // Variables
-$folders: '/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/';
-$imagewidth: 15vw;
-$inner: 80vw;
-
-  //Fonts
-  $font_light: 300 1em 'brandon-grotesque', Arial, sans-serif;
-  $font_regular: 400 1em 'brandon-grotesque', Arial, sans-serif;
-  $font_bold: 700 1em 'brandon-grotesque', Arial, sans-serif;
-  $font_headings: $font_bold;
-
-  //Colours
-
-// Mixins
-@mixin rotate-images($deg) {
-  transform: rotate($deg);
-    -webkit-transform: rotate($deg);
-    -moz-transform: rotate($deg);
-    -ms-transform: rotate($deg);
-    -o-transform: rotate($deg);
-}
+// $imagewidth: 15vw;
+$inner: 100%;
+$header: 20vh;
+$footer: 1vh;
+$product_image: 100px;
 
 //HTML Tags
 ::-webkit-scrollbar {
@@ -35,9 +17,9 @@ $inner: 80vw;
 body {
   background-color: #e6e7df;
     // background-image: url($folders + 'images/background.jpg');
-    background-attachment: fixed;
-    background-size: 100%;
-    background-position: center top;
+    // background-attachment: fixed;
+    // background-size: 100%;
+    // background-position: center top;
   font: $font_regular;
   width: 100%;
 }
@@ -58,29 +40,32 @@ a {
 
 nav {
   display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
 
   ul {
     list-style-type: none;
+    -webkit-padding-start: 0;
   }
 }
 
 li.widget {
   list-style-type: none;
+  -webkit-padding-start: 0;
 }
 
 header.site-header {
-  // background-image: url($folders + 'images/background.jpg');
-    background-size: 100%;
-    background-position: center top;
+  background-color: rgba(230, 231, 223, 0.5);
+    // background-image: url($folders + 'images/background.jpg');
+    // background-size: 100%;
+    // background-position: center top;
   border: none;
   display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: space-around;
-  height: 20vh;
-    min-height: 70px;
+    justify-content: space-between;
+  height: $header;
+    // min-height: 70px;
 
     & .menu-home-page-container {
       width: 100%;
@@ -98,8 +83,8 @@ header.site-header {
     }
 
     .menu {
-      display: flex;
-        flex-direction: row;
+      display: none;
+        flex-direction: column;
         justify-content: space-around;
 
       li {
@@ -109,7 +94,7 @@ header.site-header {
           -webkit-filter: grayscale(100%);
         padding: 1vw;
         text-align: center;
-        width: 30%;
+        width: 100%;
 
         &.menu-item-17 {
           background-image: url($folders + 'images/jewellery-horizontal.jpg');
@@ -157,7 +142,7 @@ header.site-header {
       ul.menu-widget {
         display: inline;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
 
         li {
           margin-left: 20px;
@@ -172,16 +157,16 @@ header.site-header {
 }
 
 .site-content {
-  min-height: 80vh;
+  min-height: 100 - $header;
 
   .content-area {
-    min-height: 70vh;
+    min-height: 100 - $header - $footer;
   }
 }
 
 footer {
-  background: transparent;
-  height: 10vh;
+  background-color: rgb(230, 231, 223);
+  height: $footer;
 }
 
 //Classes
@@ -219,11 +204,11 @@ footer {
   // margin-top: 20vh;
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  width: 100%;
 }
 
 div.content-home {
-  height: 80vh;
+  height: 100 - $header;
   // margin-top: -20vh;
   width: 100%;
 }
@@ -232,27 +217,27 @@ div.content-home {
   width: 100%;
   .menu {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+      flex-direction: column;
+      justify-content: space-around;
     list-style: none;
     -webkit-padding-start: 0;
 
     li {
-      align-items: center;
       background-repeat: no-repeat;
       background-size: cover;
       display: flex;
-      justify-content: center;
+        align-items: center;
+        justify-content: center;
       text-decoration: none;
 
       a {
         color: #fff;
         font-size: 3em;
-        height: 90vh;
+        height: 25vh;
         padding-top: 45vh;
         text-align: center;
         text-decoration: none;
-        width: 30vw;
+        width: 95%;
       }
 
       ul {
@@ -282,8 +267,8 @@ article.has-post-thumbnail {
   }
 
   .entry-thumbnail {
-    display: inline-block;
-    width: 49.5%;
+    display: block;
+    width: 90%;
 
     img {
       height: auto;
@@ -291,11 +276,11 @@ article.has-post-thumbnail {
     }
   }
   .entry-content {
-    display: inline-block;
-    padding: 0 0 0 30px;
+    display: block;
+    padding: 20px 0 0 0;
     text-align: right;
     vertical-align: top;
-    width: 50%;
+    width: 90%;
   }
 }
 
@@ -308,7 +293,7 @@ article.has-post-thumbnail {
 .entry-content, article.etsy_products {
   margin-left: auto;
   margin-right: auto;
-  width: 1000px;
+  width: 100%;
 }
 
 .filter-buttons {
@@ -336,10 +321,10 @@ article.has-post-thumbnail {
 
 article.etsy_products {
   display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
   .entry-thumbnail {
-    width: 50%;
+    width: 90%;
 
     img {
       height: auto;
@@ -353,13 +338,13 @@ article.etsy_products {
     }
 
     .post-content {
-      padding: 0 0 0 30px;
+      padding: 20px 0 0 0;
       text-align: right;
     }
 
   .jewellery-content {
     padding: 0 10px;
-    width: 50%;
+    width: 100%;
 
     .entry-header {
       text-align: right;
@@ -396,9 +381,9 @@ div.products.category-jewellery {
     }
 
     .product-item-image {
-      height: 20vh;
+      height: $product_image;
       overflow: hidden;
-      width: 20vh;
+      width: $product_image;
 
       img {
         height: auto;
@@ -418,14 +403,14 @@ div.products.category-jewellery {
     }
 
     .product-item-name {
-      color: white;
+      color: #fff;
       display: none;
         align-items: flex-end;
-      height: 20vh;
-      margin-top: -20vh;
+      height: $product_image;
+      margin-top: -$product_image;
         -webkit-margin-after: 0;
       padding: 5px;
-      width: 20vh;
+      width: $product_image;
     }
   }
 }
@@ -437,7 +422,7 @@ footer.home-footer {
 footer {
   .inner {
     display: flex;
-      flex-direction: row;
+      flex-direction: column;
       flex-wrap: nowrap;
       justify-content: space-between;
   }
