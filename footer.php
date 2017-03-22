@@ -28,7 +28,7 @@
 					</nav><!-- .social-navigation -->
 				<?php endif; ?>
 				<div class="aimhigher-logo">
-					<a href="www.aimhigherwebdesign.com" target="_blank"><img src="/wp-content/uploads/Graphics-2.png" /></a>
+					<a href="http://www.aimhigherwebdesign.com" target="_blank"><img src="/nadinesmithstudio/wp-content/uploads/Graphics-2.png" /></a>
 				</div>
 			<?php else: ?>
 			<?php endif ?>
@@ -37,7 +37,7 @@
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 <?php wp_footer(); ?>
-<script type="text/javascript" src="/wp-content/themes/nadinesmithstudio/resources/js/main.js"></script>
+<script type="text/javascript" src="/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/js/main.js"></script>
 
 </body>
 </html>
