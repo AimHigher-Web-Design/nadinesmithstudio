@@ -62,14 +62,16 @@ get_header(); ?>
 						<a href="<?php echo get_post_permalink(get_the_ID()); ?>">
 							<div class="product-item-image">
 								<?php echo get_the_post_thumbnail( get_the_ID()); ?>
+							</div>
+							<div class="product-item-info">
 								<div class="product-item-price">
 									$ <?php echo get_post_meta( get_the_ID(), '_etsy_product_price', true ); ?>
 								</div>
+								<div class="product-item-name">
+									<p><?php the_title(); ?></p>
+								</div>
 							</div>
 						</a>
-						<div class="product-item-name">
-							<p><?php the_title(); ?></p>
-						</div>
 					</div>
 
 			    <?php
