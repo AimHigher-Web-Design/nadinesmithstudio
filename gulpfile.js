@@ -28,7 +28,7 @@ gulp.task('watch', function() {
 
 
 //Replace file paths for local host with remote server
-gulp.task('replacePaths', function(){
+gulp.task('replaceLocalDev', function(){
   gulp.src([pathFiles, '!gulpfile.js'])
     .pipe(replace(localHostPath, remotePath))
     .pipe(gulp.dest('./'));
@@ -37,5 +37,5 @@ gulp.task('replacePaths', function(){
     .pipe(replaceString(localHostPath, remotePath))
     .pipe(gulp.dest('source/scss/'));
 
-  gulp.task('caller', ['sassy']);
+  gulp.start('sassy');
 });
