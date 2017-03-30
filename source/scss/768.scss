@@ -46,7 +46,7 @@ header.site-header {
   // border: none;
   // display: flex;
     // align-items: center;
-    // flex-direction: row;
+    flex-direction: row;
     justify-content: space-around;
   height: 20vh;
     min-height: 70px;
@@ -64,6 +64,10 @@ header.site-header {
     .primary-navigation {
       flex-wrap: wrap;
       width: 50vw;
+
+      .mobile-menu {
+        display: none;
+      }
     }
 
     .menu {
@@ -232,17 +236,17 @@ div.content-home {
 
     .menu-item-17 {
       background-image: url($folders + 'images/jewellery.jpg');
-        background-position: 100% 100%;
+        background-position: 24%;
     }
 
     .menu-item-18 {
       // background-image: url($folders + 'images/music.jpg');
-      background-position: 100% 100%;
+      background-position: 50%;
     }
 
     .menu-item-19 {
       // background-image: url($folders + 'images/photography.jpg');
-      background-position: 0%;
+      // background-position: 0%;
     }
   }
 }
@@ -286,7 +290,7 @@ article.has-post-thumbnail {
   // display: flex;
     // align-items: center;
     // flex-direction: row;
-    // justify-content: flex-end;
+    justify-content: flex-end;
   // margin-right: 2vw;
 
     input {
@@ -294,7 +298,7 @@ article.has-post-thumbnail {
       // border: none;
       // color: #252525;
       // cursor: pointer;
-      // margin: 0 20px;
+      margin: 0 20px;
       // padding: 0;
       // width: 60px;
 

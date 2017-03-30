@@ -15,7 +15,8 @@ $product_image: 200px;
 }
 
 body {
-  background-color: #e6e7df;
+  background-color: rgb(253, 245, 230);
+  background-color: rgba(253, 245, 230, 0.6);
     // background-image: url($folders + 'images/background.jpg');
     // background-attachment: fixed;
     // background-size: 100%;
@@ -55,14 +56,14 @@ li.widget {
 }
 
 header.site-header {
-  background-color: rgba(230, 231, 223, 0.5);
+  background-color: rgba(253, 245, 230, 0.2);
     // background-image: url($folders + 'images/background.jpg');
     // background-size: 100%;
     // background-position: center top;
   border: none;
   display: flex;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
   height: $header;
     // min-height: 70px;
@@ -78,8 +79,20 @@ header.site-header {
     }
 
     .primary-navigation {
-      flex-wrap: wrap;
-      width: 50vw;
+      align-items: center;
+      // flex-wrap: wrap;
+      width: 100%;
+
+      .mobile-menu {
+        background: rgb(255, 231, 188);
+        background: rgba(255, 231, 188, 0.5);
+        box-shadow: 2px 2px 1px black;
+        font-size: 1.4em;
+        margin-bottom: 10px;
+        text-align: center;
+        text-transform: uppercase;
+        width: 100px;
+      }
     }
 
     .menu {
@@ -228,8 +241,13 @@ div.content-home {
       display: flex;
         align-items: center;
         justify-content: center;
+      filter: grayscale(100%);
       margin-bottom: 10px;
       text-decoration: none;
+
+      &:hover {
+        filter: grayscale(0%);
+      }
 
       a {
         color: #fff;
@@ -248,7 +266,7 @@ div.content-home {
 
     .menu-item-17 {
       background-image: url($folders + 'images/jewellery-horizontal.jpg');
-        background-position: 100% 50%;
+        background-position: 100% 15%;
     }
 
     .menu-item-18 {
@@ -302,15 +320,17 @@ article.has-post-thumbnail {
   display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: flex-end;
+    flex-wrap: wrap;
+    justify-content: center;
   margin-right: 2vw;
+  max-width: 100%;
 
     input {
       background-color: transparent;
       border: none;
       color: #252525;
       cursor: pointer;
-      margin: 0 20px;
+      margin: 10px 20px;
       padding: 0;
       width: 60px;
 

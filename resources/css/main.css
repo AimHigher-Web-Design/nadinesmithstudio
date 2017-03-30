@@ -17,7 +17,8 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #e6e7df;
+  background-color: oldlace;
+  background-color: rgba(253, 245, 230, 0.6);
   font: 400 1em "brandon-grotesque", Arial, sans-serif;
   width: 100%; }
 
@@ -45,11 +46,11 @@ li.widget {
   -webkit-padding-start: 0; }
 
 header.site-header {
-  background-color: rgba(230, 231, 223, 0.5);
+  background-color: rgba(253, 245, 230, 0.2);
   border: none;
   display: flex;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   height: 20vh; }
   header.site-header .menu-home-page-container {
@@ -57,8 +58,17 @@ header.site-header {
   header.site-header.home-header {
     justify-content: center; }
   header.site-header .primary-navigation {
-    flex-wrap: wrap;
-    width: 50vw; }
+    align-items: center;
+    width: 100%; }
+    header.site-header .primary-navigation .mobile-menu {
+      background: #ffe7bc;
+      background: rgba(255, 231, 188, 0.5);
+      box-shadow: 2px 2px 1px black;
+      font-size: 1.4em;
+      margin-bottom: 10px;
+      text-align: center;
+      text-transform: uppercase;
+      width: 100px; }
   header.site-header .menu {
     display: none;
     flex-direction: column;
@@ -158,8 +168,11 @@ div.content-home {
       display: flex;
       align-items: center;
       justify-content: center;
+      filter: grayscale(100%);
       margin-bottom: 10px;
       text-decoration: none; }
+      .home_nav .menu li:hover {
+        filter: grayscale(0%); }
       .home_nav .menu li a {
         color: #fff;
         font-size: 3em;
@@ -172,7 +185,7 @@ div.content-home {
         display: none; }
     .home_nav .menu .menu-item-17 {
       background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/jewellery-horizontal.jpg");
-      background-position: 100% 50%; }
+      background-position: 100% 15%; }
     .home_nav .menu .menu-item-18 {
       background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/music.jpg");
       background-position: 100% 75%; }
@@ -206,14 +219,16 @@ article.has-post-thumbnail .entry-content {
   display: flex;
   align-items: center;
   flex-direction: row;
-  justify-content: flex-end;
-  margin-right: 2vw; }
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: 2vw;
+  max-width: 100%; }
   .filter-buttons input {
     background-color: transparent;
     border: none;
     color: #252525;
     cursor: pointer;
-    margin: 0 20px;
+    margin: 10px 20px;
     padding: 0;
     width: 60px; }
     .filter-buttons input:hover, .filter-buttons input:focus, .filter-buttons input:active {
@@ -326,12 +341,15 @@ footer .aimhigher-logo {
     flex-direction: row; }
   header.site-header {
     background-color: rgba(230, 231, 223, 0.5);
+    flex-direction: row;
     justify-content: space-around;
     height: 20vh;
     min-height: 70px; }
     header.site-header .primary-navigation {
       flex-wrap: wrap;
       width: 50vw; }
+      header.site-header .primary-navigation .mobile-menu {
+        display: none; }
     header.site-header .menu {
       display: flex;
       flex-direction: row; }
@@ -368,11 +386,9 @@ footer .aimhigher-logo {
         width: 30vw; }
     .home_nav .menu .menu-item-17 {
       background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/jewellery.jpg");
-      background-position: 100% 100%; }
+      background-position: 24%; }
     .home_nav .menu .menu-item-18 {
-      background-position: 100% 100%; }
-    .home_nav .menu .menu-item-19 {
-      background-position: 0%; }
+      background-position: 50%; }
   article.has-post-thumbnail .entry-thumbnail {
     display: inline-block;
     width: 49.5%; }
@@ -382,6 +398,10 @@ footer .aimhigher-logo {
     width: 50%; }
   .entry-content, article.etsy_products {
     width: 1000px; }
+  .filter-buttons {
+    justify-content: flex-end; }
+    .filter-buttons input {
+      margin: 0 20px; }
   article.etsy_products {
     flex-direction: row; }
     article.etsy_products .entry-thumbnail {
