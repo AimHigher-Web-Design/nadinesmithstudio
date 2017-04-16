@@ -3,7 +3,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var replace = require('gulp-replace');
 var replaceString = require('gulp-string-replace');
-
+var sourcemaps = require('gulp-sourcemaps');
 
 //File Paths
 var sassFiles = 'source/scss/**/*.scss',
@@ -16,16 +16,16 @@ var sassFiles = 'source/scss/**/*.scss',
 //Compile main sass into css
 gulp.task('sassy', function(){
   gulp.src(mainSassFile)
+    .pipe(sourcemaps.init())
       .pipe(sass().on('error', sass.logError)) //Using gulp-sass
+    .pipe(sourcemaps.write('../maps'))
       .pipe(gulp.dest(cssFiles))
 });
-
 
 //Watch for changes in sass files and running sass compile
 gulp.task('watch', function() {
   gulp.watch(sassFiles, ['sassy']);
 });
-
 
 //Replace file paths for local host with remote server
 gulp.task('replaceLocalDev', function(){

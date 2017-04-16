@@ -20,5 +20,10 @@ var activeMenu = function() {
   };
 };
 
+// Mobile Menu
+var mobileMenu = function() {
+  document.getElementsByClassName('mobile-menu').classList.toggle('active');
+};
+
 //Call Functions
   window.onLoad = activeMenu();

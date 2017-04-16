@@ -1,0 +1,9 @@
+$inner_width: 1200px;
+
+.content-area {
+    width: $inner_width;
+
+    &.photography {
+        width: 100%;
+    }
+}

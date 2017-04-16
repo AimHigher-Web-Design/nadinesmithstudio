@@ -39,7 +39,7 @@ li.widget {
 }
 
 header.site-header {
-  background-color: rgba(230, 231, 223, 0.5);
+  // background-color: rgba(230, 231, 223, 0.5);
     // background-image: url($folders + 'images/background.jpg');
     // background-size: 100%;
     // background-position: center top;
@@ -146,6 +146,7 @@ header.site-header {
 
 .site-content {
   // min-height: 80vh;
+  margin-top: 20px;
 
   .content-area {
     // min-height: 70vh;
@@ -171,6 +172,7 @@ footer {
 }
 
 .logo {
+  margin-bottom: 0;
   // width: auto;
 
   .site-logo {
@@ -192,7 +194,11 @@ footer {
   // margin-top: 20vh;
   // margin-left: auto;
   // margin-right: auto;
-  width: 1200px;
+  width: 100%;
+}
+
+.entry-header {
+  margin-right: 0;
 }
 
 div.content-home {
@@ -439,6 +445,7 @@ footer {
       // filter: grayscale(100%);
         // -webkit-filter: grayscale(100%);
       float: none;
+      width: 100%;
     }
   }
 }

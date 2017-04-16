@@ -56,6 +56,7 @@ li.widget {
 }
 
 header.site-header {
+  background-color: rgb(253, 245, 230);
   background-color: rgba(253, 245, 230, 0.2);
     // background-image: url($folders + 'images/background.jpg');
     // background-size: 100%;
@@ -88,7 +89,7 @@ header.site-header {
         background: rgba(255, 231, 188, 0.5);
         box-shadow: 2px 2px 1px black;
         font-size: 1.4em;
-        margin-bottom: 10px;
+        // margin-bottom: 10px;
         text-align: center;
         text-transform: uppercase;
         width: 100px;
@@ -155,7 +156,7 @@ header.site-header {
       ul.menu-widget {
         display: inline;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
 
         li {
           margin-left: 20px;
@@ -169,8 +170,13 @@ header.site-header {
   }
 }
 
+.mobile-menu.active + .menu-home-page-container {
+  display: block;
+}
+
 .site-content {
   min-height: 100 - $header;
+  margin-top: 45px;
 
   .content-area {
     min-height: 100 - $header - $footer;
@@ -178,7 +184,7 @@ header.site-header {
 }
 
 footer {
-  background-color: rgb(230, 231, 223);
+  // background-color: rgb(230, 231, 223);
   height: $footer;
 }
 
@@ -196,6 +202,7 @@ footer {
 }
 
 .logo {
+  margin-bottom: 30px;
   width: auto;
 
   .site-logo {
@@ -218,6 +225,10 @@ footer {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+}
+
+.entry-header {
+  margin-right: 20px;
 }
 
 div.content-home {
@@ -288,6 +299,7 @@ article.has-post-thumbnail {
 
   .entry-thumbnail {
     display: block;
+    text-align: center;
     width: 90%;
 
     img {
@@ -343,16 +355,19 @@ article.has-post-thumbnail {
 
 article.etsy_products {
   display: flex;
+    align-items: center;
     flex-direction: column;
 
   .entry-thumbnail {
-    height: 300px;
+    height: auto;
     width: 90%;
 
     img {
-      height: 100%;
+      height: 300px;
+        max-height: 100%;
       margin: 0 auto;
       width: auto;
+        max-width: 100%;
     }
   }
 
@@ -374,6 +389,17 @@ article.etsy_products {
       text-align: right;
     }
   }
+}
+
+.photography {
+  .wpmf-gallerys {
+    max-width: 100vw;
+
+    .wpmf-gallery-item {
+      min-width: 260px;
+      height: auto;
+    }
+  }    
 }
 
 .widget_custom_menu_wizard {
@@ -482,12 +508,20 @@ footer {
   }
 
   .aimhigher-logo {
-    padding: 0 10px 10px 0;
+    padding: 0 20px 10px 0;
+
 
     img {
       filter: grayscale(100%);
         -webkit-filter: grayscale(100%);
       float: right;
+      width: 40vw;
+        max-width: 200px;
+
+      &:hover {
+        filter: grayscale(0);
+          -webkit-filter: grayscale(0);
+      }
     }
   }
 }

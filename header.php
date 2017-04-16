@@ -29,6 +29,10 @@
 
 </script>
 		<?php wp_head(); ?>
+
+<!--Google Captcha Script-->
+		<script src='https://www.google.com/recaptcha/api.js'></script>
+
 	</head>
 
 	<body <?php body_class(); ?>>
@@ -40,7 +44,7 @@
 						<a href="/"><img class="site-logo" src="/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/logo.svg" /></a>
 					</div>
 					<nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
-						<div class="mobile-menu">
+						<div class="mobile-menu" onclick="mobileMenu">
 							Menu
 						</div>
 						<?php wp_nav_menu( array( 'theme_location' => 'primary' ) );
