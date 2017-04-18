@@ -60,6 +60,7 @@ header.site-header {
     justify-content: center; }
   header.site-header .primary-navigation {
     align-items: center;
+    left: 0;
     width: 100%; }
     header.site-header .primary-navigation .mobile-menu {
       background: #ffe7bc;
@@ -119,7 +120,7 @@ header.site-header {
 
 .site-content {
   min-height: 80vh;
-  margin-top: 45px; }
+  margin-top: 60px; }
   .site-content .content-area {
     min-height: 79vh; }
 

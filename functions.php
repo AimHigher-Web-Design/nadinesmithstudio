@@ -245,3 +245,6 @@ function themeprefix_menu_attribute_add( $atts, $item, $args )
   //Return the new attribute
   return $atts;
 }
+
+//Hide Admin bar
+add_filter('show_admin_bar', '__return_false');

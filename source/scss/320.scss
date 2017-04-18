@@ -82,6 +82,7 @@ header.site-header {
     .primary-navigation {
       align-items: center;
       // flex-wrap: wrap;
+      left: 0;
       width: 100%;
 
       .mobile-menu {
@@ -93,7 +94,7 @@ header.site-header {
         text-align: center;
         text-transform: uppercase;
         width: 100px;
-      }
+      }     
     }
 
     .menu {
@@ -176,7 +177,7 @@ header.site-header {
 
 .site-content {
   min-height: 100 - $header;
-  margin-top: 45px;
+  margin-top: 60px;
 
   .content-area {
     min-height: 100 - $header - $footer;
