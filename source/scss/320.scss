@@ -526,4 +526,23 @@ footer {
   }
 }
 
-//IDs
+//Mobile Menu
+nav:active .menu, nav:hover .menu, nav:focus .menu {
+  display: block;
+}
+
+.primary-navigation {
+  position: absolute;
+  top: 18vh;
+  z-index: 1;
+
+  ul.menu {
+    & > li {
+      a {
+        font-size: 10vh;
+        height: 25vh;
+        line-height: 25vh;
+      }
+    }
+  }
+}

@@ -358,6 +358,18 @@ footer .aimhigher-logo {
       filter: grayscale(0);
       -webkit-filter: grayscale(0); }
 
+nav:active .menu, nav:hover .menu, nav:focus .menu {
+  display: block; }
+
+.primary-navigation {
+  position: absolute;
+  top: 18vh;
+  z-index: 1; }
+  .primary-navigation ul.menu > li a {
+    font-size: 10vh;
+    height: 25vh;
+    line-height: 25vh; }
+
 @media screen and (min-width: 768px) {
   nav {
     flex-direction: row; }
