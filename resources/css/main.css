@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 .nf-form-wrap .nf-form-fields-required {
   display: none; }
 
@@ -19,18 +20,18 @@
 body {
   background-color: oldlace;
   background-color: rgba(253, 245, 230, 0.6);
-  font: 400 1em "brandon-grotesque", Arial, sans-serif;
+  font: 400 1em "Open Sans", Arial, sans-serif;
   width: 100%; }
 
 h1 {
   font-size: 2em; }
 
 h2 {
-  font: 700 1em "brandon-grotesque", Arial, sans-serif; }
+  font: 700 1em "Open Sans", Arial, sans-serif; }
 
 a {
   color: rgba(0, 0, 0, 0.7);
-  font: 400 1em "brandon-grotesque", Arial, sans-serif;
+  font: 400 1em "Open Sans", Arial, sans-serif;
   text-decoration: none; }
 
 nav {
@@ -463,13 +464,13 @@ nav:active .menu, nav:hover .menu, nav:focus .menu {
     article.etsy_products .jewellery-content {
       padding: 0 10px;
       width: 50%; }
-  div.products.category-jewellery .product-item.jewellery .product-item-image {
+  div.products.category-jewellery .product-item.jewellery {
     height: 20vh;
     width: 20vh; }
-  div.products.category-jewellery .product-item.jewellery .product-item-name {
-    height: 20vh;
-    margin-top: -20vh;
-    width: 20vh; }
+    div.products.category-jewellery .product-item.jewellery .product-item-name {
+      height: 20vh;
+      margin-top: -20vh;
+      width: 20vh; }
   footer .inner {
     flex-direction: row; }
   footer .aimhigher-logo {

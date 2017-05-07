@@ -15,7 +15,6 @@
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 		<link rel="stylesheet" type="text/css" href="/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/css/main.css" />
-		<script src="https://use.typekit.net/tfp4yqo.js"></script>
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script>

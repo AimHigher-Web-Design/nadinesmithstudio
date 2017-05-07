@@ -371,6 +371,8 @@ div.products.category-jewellery {
 
   .product-item.jewellery {
     // margin: 2vw;
+      height: $product_image;
+      width: $product_image;
 
     &:hover, &:focus {
       // filter: grayscale(100%);
@@ -382,9 +384,9 @@ div.products.category-jewellery {
     }
 
     .product-item-image {
-      height: $product_image;
+      // height: $product_image;
       // overflow: hidden;
-      width: $product_image;
+      // width: $product_image;
 
       img {
         // height: auto;

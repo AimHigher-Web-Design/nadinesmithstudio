@@ -1,3 +1,6 @@
+//Imports
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
 //Screen Sizes
 $mobile: 320px;
 $mobile_wide: 480px;
@@ -10,9 +13,9 @@ $desktop_wide: 1260px;
 $folders: '/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/';
 
 //Fonts
-$font_light: 300 1em 'brandon-grotesque', Arial, sans-serif;
-$font_regular: 400 1em 'brandon-grotesque', Arial, sans-serif;
-$font_bold: 700 1em 'brandon-grotesque', Arial, sans-serif;
+$font_light: 300 1em 'Open Sans', Arial, sans-serif;
+$font_regular: 400 1em 'Open Sans', Arial, sans-serif;
+$font_bold: 700 1em 'Open Sans', Arial, sans-serif;
 $font_headings: $font_bold;
 
 //Colours
