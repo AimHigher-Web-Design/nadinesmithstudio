@@ -28,7 +28,7 @@
 					</nav><!-- .social-navigation -->
 				<?php endif; ?>
 				<div class="aimhigher-logo">
-					<a href="http://www.aimhigherwebdesign.com" target="_blank"><img src="/nadinesmithstudio/wp-content/uploads/Graphics-2.png" /></a>
+					<a href="http://www.aimhigherwebdesign.com" target="_blank"><img src="/nadinesmithstudio/wp-content/uploads/Graphics-Logo.svg" /></a>
 				</div>
 			<?php else: ?>
 			<?php endif ?>
