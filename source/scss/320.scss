@@ -55,6 +55,10 @@ li.widget {
   -webkit-padding-start: 0;
 }
 
+span.sign {
+  font: $font_sign;
+}
+
 header.site-header {
   background-color: rgb(253, 245, 230);
   background-color: rgba(253, 245, 230, 0.2);

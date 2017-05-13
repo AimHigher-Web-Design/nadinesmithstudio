@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+@import url("https://fonts.googleapis.com/css?family=Pacifico|Rochester|Sacramento|Satisfy");
 .nf-form-wrap .nf-form-fields-required {
   display: none; }
 
@@ -45,6 +46,9 @@ nav {
 li.widget {
   list-style-type: none;
   -webkit-padding-start: 0; }
+
+span.sign {
+  font: 400 1em "Pacifico", cursive; }
 
 header.site-header {
   background-color: oldlace;
@@ -445,7 +449,7 @@ nav:active .menu, nav:hover .menu, nav:focus .menu {
         width: 30vw; }
     .home_nav .menu .menu-item-17 {
       background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/jewellery.jpg");
-      background-position: 24%; }
+      background-position: 100%; }
     .home_nav .menu .menu-item-18 {
       background-position: 50%; }
   article.has-post-thumbnail .entry-thumbnail {
