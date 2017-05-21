@@ -118,6 +118,8 @@ header.site-header {
         margin-left: 20px; }
         header.site-header .sidebar .widget_custom_menu_wizard ul.menu-widget li a {
           padding: 5px; }
+        header.site-header .sidebar .widget_custom_menu_wizard ul.menu-widget li.category {
+          font-size: 1.3em; }
 
 .mobile-menu.active + .menu-home-page-container {
   display: block; }
@@ -204,7 +206,7 @@ div.content-home {
       background-position: 100% 75%; }
     .home_nav .menu .menu-item-19 {
       background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/photography.jpg");
-      background-position: 0% 35%; }
+      background-position: 75% 40%; }
 
 article.has-post-thumbnail h1 {
   text-align: right; }
@@ -377,13 +379,12 @@ footer .aimhigher-logo {
       filter: grayscale(0);
       -webkit-filter: grayscale(0); }
 
-nav:active .menu, nav:hover .menu, nav:focus .menu {
-  display: block; }
-
 .primary-navigation {
   position: absolute;
   top: 18vh;
   z-index: 1; }
+  .primary-navigation ul.menu.active {
+    display: block; }
   .primary-navigation ul.menu > li a {
     font-size: 10vh;
     height: 25vh;
@@ -452,6 +453,8 @@ nav:active .menu, nav:hover .menu, nav:focus .menu {
       background-position: 100%; }
     .home_nav .menu .menu-item-18 {
       background-position: 50%; }
+    .home_nav .menu .menu-item-19 {
+      background-position: 75% 0%; }
   article.has-post-thumbnail .entry-thumbnail {
     display: inline-block;
     width: 49.5%; }

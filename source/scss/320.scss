@@ -169,6 +169,10 @@ header.site-header {
           a {
             padding: 5px;
           }
+
+          &.category {
+            font-size: 1.3em;
+          }
         }
       }
     }
@@ -293,7 +297,7 @@ div.content-home {
 
     .menu-item-19 {
       background-image: url($folders + 'images/photography.jpg');
-        background-position: 0% 35%;
+        background-position: 75% 40%;
     }
   }
 }
@@ -553,16 +557,16 @@ footer {
 }
 
 //Mobile Menu
-nav:active .menu, nav:hover .menu, nav:focus .menu {
-  display: block;
-}
-
 .primary-navigation {
   position: absolute;
   top: 18vh;
   z-index: 1;
 
   ul.menu {
+    &.active {
+      display: block;
+    }
+
     & > li {
       a {
         font-size: 10vh;

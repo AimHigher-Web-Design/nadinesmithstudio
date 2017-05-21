@@ -22,8 +22,23 @@ var activeMenu = function() {
 
 // Mobile Menu
 var mobileMenu = function() {
-  document.getElementsByClassName('mobile-menu').classList.toggle('active');
+  // console.log('script is running');
+  document.getElementsByClassName('mobile-menu')[0].addEventListener('click', function() {
+    // console.log('found the event');
+    // console.log(document.getElementById('menu-home-page').getElementsByClassName('active'));
+    if(document.getElementById('menu-home-page').classList.contains('active') == true) {
+      console.log('stuff is true');
+      document.getElementById('menu-home-page').classList.remove('active');
+    }
+    else {
+      // console.log('stuff is false');
+      document.getElementById('menu-home-page').classList.add('active');
+    };
+    // console.log('finished if');
+  });
+  // console.log('did event stuff');
 };
 
 //Call Functions
   window.onLoad = activeMenu();
+  window.onLoad = mobileMenu();
