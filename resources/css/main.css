@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
-@import url("https://fonts.googleapis.com/css?family=Pacifico|Rochester|Sacramento|Satisfy");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Stalemate");
 .nf-form-wrap .nf-form-fields-required {
   display: none; }
 
@@ -48,7 +47,7 @@ li.widget {
   -webkit-padding-start: 0; }
 
 span.sign {
-  font: 400 1em "Pacifico", cursive; }
+  font: 400 1em "Stalemate", cursive; }
 
 header.site-header {
   background-color: oldlace;
@@ -158,6 +157,7 @@ footer {
 .content-area {
   margin-left: auto;
   margin-right: auto;
+  padding: 0 20px;
   width: 100%; }
 
 .entry-header {

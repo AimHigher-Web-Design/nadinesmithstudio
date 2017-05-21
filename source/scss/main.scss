@@ -1,8 +1,5 @@
 //Imports
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
-//Cursive Font - Pick one and add to the existing font import
-@import url('https://fonts.googleapis.com/css?family=Pacifico|Rochester|Sacramento|Satisfy');
-
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Stalemate');
 
 //Screen Sizes
 $mobile: 320px;
@@ -20,7 +17,7 @@ $font_light: 300 1em 'Open Sans', Arial, sans-serif;
 $font_regular: 400 1em 'Open Sans', Arial, sans-serif;
 $font_bold: 700 1em 'Open Sans', Arial, sans-serif;
 $font_headings: $font_bold;
-$font_sign: 400 1em 'Pacifico', cursive;
+$font_sign: 400 1em 'Stalemate', cursive;
 
 //Colours
 
