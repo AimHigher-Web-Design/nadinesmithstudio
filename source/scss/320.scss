@@ -414,6 +414,10 @@ article.etsy_products {
       width: auto;
         max-width: 520px;
         min-width: 260px;
+
+      .wpmf-front-box.top {
+        display: none;
+      }
     }
 
     .gallery {
