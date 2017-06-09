@@ -171,16 +171,16 @@ header.site-header {
             padding: 5px;
           }
 
+          &:nth-last-child(3) {
+            border-left: 1px solid rgba(0, 0, 0, 0.7);
+          }
+
           &.category {
             // font-size: 1.3em;
             text-transform: uppercase;
 
             a {
               font-weight: bold;
-            }
-
-            &:nth-last-child(3) {
-              border-right: 1px solid rgba(0, 0, 0, 0.7);
             }
           }
         }
