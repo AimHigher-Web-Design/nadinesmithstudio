@@ -1,0 +1,17 @@
+.home_nav {
+    .menu {
+        li {
+            &.menu-item-17 {
+                background-image: url($folders + 'images/jewellery_480.jpg');
+            }
+
+            &.menu-item-18 {
+                background-image: url($folders + 'images/music_480.jpg');
+            }
+
+            &.menu-item-19 {
+                background-image: url($folders + 'images/photography_480.jpg');
+            } 
+        }
+    }
+}

@@ -1,0 +1,476 @@
+// Variables
+$product_image: 20vh;
+$inner: 80vw;
+$header: 20vh;
+$footer: 10vh;
+
+//HTML Tags
+::-webkit-scrollbar {
+}
+
+* {
+}
+
+body {
+}
+
+h1 {
+}
+
+h2 {
+}
+
+a {
+
+}
+
+nav {
+  // display: flex;
+    flex-direction: row;
+    // justify-content: center;
+
+  ul {
+    // list-style-type: none;
+  }
+}
+
+li.widget {
+  // list-style-type: none;
+}
+
+header.site-header {
+  // background-color: rgba(230, 231, 223, 0.5);
+    // background-image: url($folders + 'images/background.jpg');
+    // background-size: 100%;
+    // background-position: center top;
+  // border: none;
+  // display: flex;
+    // align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+  height: 20vh;
+    min-height: 70px;
+
+    & .menu-home-page-container {
+      // width: 100%;
+    }
+
+    &.home-header {
+      // align-items: center;
+      // flex-direction: column;
+      // justify-content: center;
+    }
+
+    .primary-navigation {
+      flex-wrap: wrap;
+      position: static;
+      width: 50vw;
+
+      .mobile-menu {
+        display: none;
+      }
+    }
+
+    .menu {
+      display: flex;
+        flex-direction: row;
+        // justify-content: space-around;
+
+      li {
+        // background: white;
+        // display: inline-block;
+        // filter: grayscale(100%);
+          // -webkit-filter: grayscale(100%);
+        // padding: 1vw;
+        // text-align: center;
+        width: 30%;
+
+        &.menu-item-17 {
+          // background-image: url($folders + 'images/jewellery-horizontal.jpg');
+            // background-position: 0 50%;
+            // background-size: cover;
+        }
+
+        &.menu-item-18 {
+          // background-image: url($folders + 'images/music.jpg');
+            // background-position: 100% 67%;
+            // background-size: cover;
+        }
+
+        &.menu-item-19 {
+          // background-image: url($folders + 'images/photography.jpg');
+            // background-position: 0 38%;
+            // background-size: cover;
+        }
+
+        &:active, &:hover, &:focus, &.active {
+          // filter: grayscale(0);
+            // -webkit-filter: grayscale(0);
+
+          a {
+            // color: #fff;
+          }
+        }
+
+        a {
+          // color: rgba(0, 0, 0, 0.7);
+          // display: block;
+          font-size: 2vw;
+          line-height: normal;
+          height: auto;
+        }
+      }
+
+      ul {
+        // display: none;
+      }
+    }
+
+  .sidebar {
+    // width: 100%;
+
+    .widget_custom_menu_wizard {
+      ul.menu-widget {
+        // display: inline;
+        // display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        li {
+          margin-left: 20px;
+
+          a {
+            padding: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.site-content {
+  // min-height: 80vh;
+  margin-top: 0px;
+
+  .content-area {
+    // min-height: 70vh;
+  }
+}
+
+footer {
+  // background: transparent;
+  height: 10vh;
+}
+
+//Classes
+
+.inner {
+  margin: 0 auto;
+  width: $inner;
+}
+
+.nav-item {
+  font-size: 4vh;
+  // display: inline-block;
+  padding-left: 2vw;
+}
+
+.logo {
+  margin-bottom: 0;
+  // width: auto;
+
+  .site-logo {
+    height: 12vh;
+    // margin: 2vh;
+  }
+}
+
+.menu {
+  // list-style: none;
+}
+
+.container {
+  // width: 75vw;
+  margin-left: 10vw;
+}
+
+.site-content {
+  .content-area {
+    // margin-top: 20vh;
+    // margin-left: auto;
+    // margin-right: auto;
+    min-height: 100 - $header - $footer;
+    order: 1;
+    width: 100%;
+  }
+}
+
+.entry-header {
+  margin-right: 0;
+}
+
+div.content-home {
+  // height: 80vh;
+  // margin-top: -20vh;
+  width: 100%;
+}
+
+.home_nav {
+  // width: 100%;
+  .menu {
+    // display: flex;
+      flex-direction: row;
+      // justify-content: space-around;
+    // list-style: none;
+    // -webkit-padding-start: 0;
+
+    li {
+      // background-repeat: no-repeat;
+      // background-size: cover;
+      display: flex;
+        // align-items: center;
+        // justify-content: center;
+      margin-bottom: 0;
+      // text-decoration: none;
+
+      &.menu-item-17 {
+          background-image: url($folders + 'images/jewellery.jpg');
+          background-position: 100%;
+      }
+
+      &.menu-item-18 {
+          background-image: url($folders + 'images/music.jpg');
+          background-position: 50%;
+      }
+
+      &.menu-item-19 {
+          background-image: url($folders + 'images/photography.jpg');
+          background-position: 75% 0%;
+      }
+
+      a {
+        // color: #fff;
+        // font-size: 3em;
+        height: 90vh;
+        padding-top: 45vh;
+        // text-align: center;
+        // text-decoration: none;
+        width: 30vw;
+      }
+
+      ul {
+        // display: none;
+      }
+    }
+  }
+}
+
+article.has-post-thumbnail {
+  h1 {
+      // text-align: right;
+  }
+
+  .entry-thumbnail {
+    display: inline-block;
+    width: 49.5%;
+
+    img {
+      // height: auto;
+      // width: 100%;
+    }
+  }
+  .entry-content {
+    display: inline-block;
+    padding: 0 0 0 30px;
+    // text-align: right;
+    // vertical-align: top;
+    width: 50%;
+  }
+}
+
+.Contact_form {
+  h2 {
+    // display: none;
+  }
+}
+
+.entry-content, article.etsy_products {
+  // margin-left: auto;
+  // margin-right: auto;
+  width: 1000px;
+}
+
+.filter-buttons {
+  // display: flex;
+    // align-items: center;
+    // flex-direction: row;
+    justify-content: flex-end;
+  // margin-right: 2vw;
+
+    input {
+      // background-color: transparent;
+      // border: none;
+      // color: #252525;
+      // cursor: pointer;
+      margin: 0 20px;
+      // padding: 0;
+      // width: 60px;
+
+      &:hover, &:focus, &:active {
+        // font-weight: bold;
+        // text-decoration: underline;
+      }
+    }
+}
+
+article.etsy_products {
+  // display: flex;
+    flex-direction: row;
+
+  .entry-thumbnail {
+    height: auto;
+    width: 50%;
+
+    img {
+      height: auto;
+      margin: 0;
+      width: 100%;
+    }
+  }
+
+    h1 {
+      font-size: 2em;
+      // text-align: right;
+    }
+
+    .post-content {
+      padding: 0 0 0 30px;
+      // text-align: right;
+    }
+
+  .jewellery-content {
+    padding: 0 10px;
+    width: 50%;
+
+    .entry-header {
+      // text-align: right;
+    }
+  }
+}
+
+.sidebar-content > li {
+  // list-style-type: none;
+}
+
+.submenu {
+  .widget_custom_menu_wizard {
+    ul.menu-widget {
+      flex-direction: row;
+      font-size: 1.6vw;
+
+      li {
+        margin-left: 20px;
+
+        &:nth-last-child(3) {
+          border-left: 1px solid rgba(0, 0, 0, 0.7);
+          padding-left: 20px;
+          padding-top: 0;
+        }
+      }
+    }
+}
+}
+
+div.products.category-jewellery {
+  // display: flex;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    // justify-content: center;
+
+  .product-item.jewellery {
+    // margin: 2vw;
+      height: $product_image;
+      width: $product_image;
+
+    &:hover, &:focus {
+      // filter: grayscale(100%);
+        // -webkit-filter: grayscale(100%);
+
+      .product-item-name {
+        // display: flex;
+      }
+    }
+
+    .product-item-image {
+      // height: $product_image;
+      // overflow: hidden;
+      // width: $product_image;
+
+      img {
+        // height: auto;
+          // max-height: 100%;
+          // min-height: 100%;
+        // width: auto;
+          // min-width: 100%;
+      }
+    }
+
+    .product-item-price {
+      // color: white;
+      // font-size: 1.5em;
+      // margin-top: -20vh;
+        // margin-left: 5px;
+      // position: relative;
+    }
+
+    .product-item-name {
+      // color: #fff;
+      // display: none;
+        // align-items: flex-end;
+      height: $product_image;
+      margin-top: -$product_image;
+        // -webkit-margin-after: 0;
+      // padding: 5px;
+      width: $product_image;
+    }
+  }
+}
+
+footer.home-footer {
+  // background: transparent;
+}
+
+footer {
+  .inner {
+    // display: flex;
+      flex-direction: row;
+      // flex-wrap: nowrap;
+      // justify-content: space-between;
+  }
+
+  nav {
+    #menu-footer-menu {
+      // display: flex;
+        // flex-direction: row;
+
+        li {
+          a {
+            // padding: 5px 10px;
+          }
+        }
+    }
+  }
+
+  .aimhigher-logo {
+    padding: 0 10px 10px 0;
+
+    img {
+      // filter: grayscale(100%);
+        // -webkit-filter: grayscale(100%);
+      float: none;
+      width: 100%;
+    }
+  }
+}
+
+//IDs

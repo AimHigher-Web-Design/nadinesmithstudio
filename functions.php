@@ -213,3 +213,44 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+
+//Submenu widget area
+register_sidebar( array(
+    'id' => 'submenu',
+    'name' => 'Sub-menu'
+));
+
+//Mobile submenu widget area
+register_sidebar( array(
+    'id' => 'submenu-mobile',
+    'name' => 'Sub-menu Mobile'
+));
+
+//Contact form widget area
+register_sidebar( array(
+    'id' => 'contact',
+    'name' => 'Contact Form'
+));
+
+//Open Booking page as popup
+add_filter( 'nav_menu_link_attributes', 'themeprefix_menu_attribute_add', 10, 3 );
+function themeprefix_menu_attribute_add( $atts, $item, $args )
+{
+  // Set the menu ID
+  $music_booking = 568;
+	$photography_booking = 569;
+
+  // Conditionally match the ID and add the attribute and value
+  if ($item->ID == $music_booking) {
+    $atts['id'] = 'Setmore_button_iframe';
+  }
+	else if ($item->ID == $photography_booking) {
+		$atts['id'] = 'Setmore_button_iframe';
+	};
+  //Return the new attribute
+  return $atts;
+}
+
+//Hide Admin bar
+add_filter('show_admin_bar', '__return_false');

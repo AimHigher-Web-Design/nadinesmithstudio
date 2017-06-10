@@ -1,71 +1,619 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Stalemate");
+.nf-form-wrap .nf-form-fields-required {
+  display: none; }
+
+.nf-form-wrap input {
+  max-width: 300px; }
+
+.nf-form-wrap textarea {
+  max-width: 500px; }
+
+::-webkit-scrollbar {
+  display: none; }
+
 * {
   box-sizing: border-box; }
 
 body {
-  background-image: url("/images/background.jpg");
-  font: 400 12em "Raleway", Arial, sans-serif;
+  background-color: oldlace;
+  background-color: rgba(253, 245, 230, 0.6);
+  font: 400 1em "Open Sans", Arial, sans-serif;
   width: 100%; }
+  body.home .site-content {
+    margin-top: 0; }
+
+h1 {
+  font-size: 2em; }
 
 h2 {
-  font: 1000 30em "Raleway", Arial, sans-serif; }
+  font: 700 1em "Open Sans", Arial, sans-serif; }
 
 a {
-  font: 400 12em "Raleway", Arial, sans-serif; }
+  color: rgba(0, 0, 0, 0.7);
+  font: 400 1em "Open Sans", Arial, sans-serif;
+  text-decoration: none; }
 
 nav {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center; }
+  nav ul {
+    list-style-type: none;
+    -webkit-padding-start: 0; }
 
-header {
+li.widget {
+  list-style-type: none;
+  -webkit-padding-start: 0; }
+
+span.sign {
+  font: 400 1em "Stalemate", cursive;
+  font-size: 2.5em; }
+
+header.site-header {
+  background-color: oldlace;
+  background-color: rgba(253, 245, 230, 0.2);
+  border: none;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center; }
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20vh; }
+  header.site-header .menu-home-page-container {
+    width: 100%; }
+  header.site-header.home-header {
+    justify-content: center; }
+  header.site-header .primary-navigation {
+    align-items: center;
+    left: 0;
+    width: 100%; }
+  header.site-header .menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around; }
+    header.site-header .menu li {
+      display: inline-block;
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+      padding: 1vw;
+      text-align: center;
+      width: 100%; }
+      header.site-header .menu li.menu-item-17 {
+        background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/jewellery_320.jpg");
+        background-position: 0 50%;
+        background-size: cover; }
+      header.site-header .menu li.menu-item-18 {
+        background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/music_320.jpg");
+        background-position: 100% 67%;
+        background-size: cover; }
+      header.site-header .menu li.menu-item-19 {
+        background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/photography_320.jpg");
+        background-position: 0 38%;
+        background-size: cover; }
+      header.site-header .menu li:active, header.site-header .menu li:hover, header.site-header .menu li:focus, header.site-header .menu li.active {
+        filter: grayscale(0);
+        -webkit-filter: grayscale(0); }
+        header.site-header .menu li:active a, header.site-header .menu li:hover a, header.site-header .menu li:focus a, header.site-header .menu li.active a {
+          color: #fff; }
+      header.site-header .menu li a {
+        color: rgba(0, 0, 0, 0.7);
+        display: block;
+        font-size: 2.5vw; }
+    header.site-header .menu ul {
+      display: none; }
+  header.site-header .sidebar {
+    width: 100%; }
+
+.mobile-menu, input[type='submit'], input[type='button'] {
+  background: #ffe7bc;
+  background: rgba(255, 231, 188, 0.5);
+  box-shadow: 2px 2px 1px black;
+  font-size: 1.4em;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100px; }
+
+.submenu .widget_custom_menu_wizard ul.menu-widget {
+  display: inline;
+  display: flex;
+  flex-direction: column;
+  -webkit-padding-start: 0; }
+  .submenu .widget_custom_menu_wizard ul.menu-widget li {
+    margin-top: 20px;
+    text-align: center; }
+    .submenu .widget_custom_menu_wizard ul.menu-widget li.category {
+      text-transform: uppercase; }
+      .submenu .widget_custom_menu_wizard ul.menu-widget li.category a {
+        font-weight: bold; }
+    .submenu .widget_custom_menu_wizard ul.menu-widget li a {
+      padding: 5px; }
+    .submenu .widget_custom_menu_wizard ul.menu-widget li:nth-last-child(3) {
+      padding-top: 10px; }
+
+.mobile-menu.active + .menu-home-page-container {
+  display: block; }
+
+.page-id-576 header .submenu, .page-id-10 header .submenu {
+  display: none; }
+
+.site-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px; }
+  .site-content .content-area {
+    order: -1; }
+
+footer {
+  height: 1vh;
+  order: 99; }
 
 .inner {
-  width: 80vw; }
+  margin: 0 auto;
+  width: 100%; }
 
 .nav-item {
   font-size: 4vh;
   display: inline-block;
   padding-left: 2vw; }
 
-.site-logo {
-  width: 30vw;
-  padding-left: 10vw; }
+.logo {
+  margin-bottom: 30px;
+  width: auto; }
+  .logo .site-logo {
+    height: 12vh;
+    margin: 2vh; }
+
+.menu {
+  list-style: none; }
+
+div.submenu {
+  display: none; }
+  div.submenu.mobile {
+    display: block; }
 
 .container {
   width: 75vw;
   margin-left: 10vw; }
 
+.content-area {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+  width: 100%; }
+
+.entry-header {
+  margin-right: 20px; }
+
+div.content-home {
+  height: 80vh;
+  width: 100%; }
+
 .home_nav {
   width: 100%; }
   .home_nav .menu {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
-    list-style: none; }
+    list-style: none;
+    -webkit-padding-start: 0; }
     .home_nav .menu li {
-      align-items: center;
       background-repeat: no-repeat;
       background-size: cover;
       display: flex;
+      align-items: center;
       justify-content: center;
-      height: 90vh;
-      text-decoration: none;
-      width: 30vw; }
+      filter: grayscale(100%);
+      margin-bottom: 10px;
+      text-decoration: none; }
+      .home_nav .menu li:hover {
+        filter: grayscale(0%); }
       .home_nav .menu li a {
+        color: #fff;
         font-size: 3em;
-        text-decoration: none; }
+        height: 25vh;
+        padding-top: 10vh;
+        text-align: center;
+        text-decoration: none;
+        width: 95%; }
+      .home_nav .menu li ul {
+        display: none; }
     .home_nav .menu .menu-item-17 {
-      background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/jewellery.jpg");
-      background-position: 100% 100%; }
+      background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/jewellery_320.jpg");
+      background-position: 100% 15%; }
     .home_nav .menu .menu-item-18 {
-      background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/music.jpg");
-      background-position: 100% 100%; }
+      background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/music_320.jpg");
+      background-position: 100% 75%; }
     .home_nav .menu .menu-item-19 {
-      background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/photography.jpg"); }
+      background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/photography_320.jpg");
+      background-position: 75% 40%; }
+
+article.has-post-thumbnail h1 {
+  text-align: right; }
+
+article.has-post-thumbnail .entry-thumbnail {
+  display: block;
+  text-align: center;
+  width: 90%; }
+  article.has-post-thumbnail .entry-thumbnail img {
+    height: auto;
+    width: 100%; }
+
+article.has-post-thumbnail .entry-content {
+  display: block;
+  padding: 20px 0 0 0;
+  text-align: right;
+  vertical-align: top;
+  width: 90%; }
+
+.nf-form-cont .nf-form-wrap .nf-form-layout .nf-form-content nf-field .nf-field .field-wrap input, .nf-form-cont .nf-form-wrap .nf-form-layout .nf-form-content nf-field .nf-field .field-wrap textarea {
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  font: 400 1em "Open Sans", Arial, sans-serif;
+  padding: 10px; }
+  .nf-form-cont .nf-form-wrap .nf-form-layout .nf-form-content nf-field .nf-field .field-wrap input[type='button'], .nf-form-cont .nf-form-wrap .nf-form-layout .nf-form-content nf-field .nf-field .field-wrap textarea[type='button'] {
+    background: #ffe7bc;
+    background: rgba(255, 231, 188, 0.5); }
+  .nf-form-cont .nf-form-wrap .nf-form-layout .nf-form-content nf-field .nf-field .field-wrap input:focus, .nf-form-cont .nf-form-wrap .nf-form-layout .nf-form-content nf-field .nf-field .field-wrap textarea:focus {
+    outline: none; }
+
+.nf-form-cont .nf-form-wrap .nf-form-layout .nf-form-content nf-field .nf-field .field-wrap.nf-error input, .nf-form-cont .nf-form-wrap .nf-form-layout .nf-form-content nf-field .nf-field .field-wrap.nf-error textarea {
+  border: 1px solid #FF0037; }
+
+.nf-form-cont .nf-form-wrap .nf-form-layout .nf-form-content nf-field .nf-field .field-wrap.nf-pass input, .nf-form-cont .nf-form-wrap .nf-form-layout .nf-form-content nf-field .nf-field .field-wrap.nf-pass textarea {
+  border: 1px solid #5BE019; }
+  .nf-form-cont .nf-form-wrap .nf-form-layout .nf-form-content nf-field .nf-field .field-wrap.nf-pass input:focus, .nf-form-cont .nf-form-wrap .nf-form-layout .nf-form-content nf-field .nf-field .field-wrap.nf-pass textarea:focus {
+    border: none; }
+
+.nf-form-cont .nf-form-wrap .nf-form-layout .nf-form-content nf-field .nf-after-field {
+  display: none; }
+
+.entry-content, article.etsy_products {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; }
+
+.filter-buttons {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: 2vw;
+  max-width: 100%; }
+  .filter-buttons input {
+    background: none;
+    border: none;
+    box-shadow: none;
+    color: #252525;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 10px 20px;
+    padding: 0;
+    text-align: left;
+    text-transform: none;
+    width: auto; }
+    .filter-buttons input:hover, .filter-buttons input:focus, .filter-buttons input:active {
+      font-weight: bold;
+      text-decoration: underline; }
+
+article.etsy_products {
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  article.etsy_products .entry-thumbnail {
+    height: auto;
+    width: 90%; }
+    article.etsy_products .entry-thumbnail img {
+      height: 300px;
+      max-height: 100%;
+      margin: 0 auto;
+      width: auto;
+      max-width: 100%; }
+  article.etsy_products h1 {
+    font-size: 1.5em;
+    text-align: right; }
+  article.etsy_products .post-content {
+    padding: 20px 0 0 0;
+    text-align: right; }
+  article.etsy_products .jewellery-content {
+    padding: 10px;
+    width: 100%; }
+    article.etsy_products .jewellery-content .entry-header {
+      text-align: right; }
+
+.photography .wpmf-gallerys {
+  max-width: 100vw; }
+  .photography .wpmf-gallerys .wpmf-gallery-item {
+    height: auto;
+    width: auto;
+    max-width: 520px;
+    min-width: 260px; }
+    .photography .wpmf-gallerys .wpmf-gallery-item .wpmf-front-box.top {
+      display: none; }
+  .photography .wpmf-gallerys .gallery {
+    background: transparent;
+    border: none; }
+    .photography .wpmf-gallerys .gallery img {
+      height: auto;
+      max-height: 80vh;
+      width: auto;
+      max-width: 100vw; }
+    .photography .wpmf-gallerys .gallery .flex-control-nav {
+      display: none; }
+
+.page-template-photography .wpmf-gallerys .wpmfslide .wpmf-slides .wpmf-gallery-item img {
+  max-height: 60vh; }
+
+.page-template-photography .wpmf-gallerys .wpmfslide .flex-control-nav {
+  bottom: -60px; }
+
+.widget_custom_menu_wizard ul {
+  list-style-type: none; }
+
+.sidebar-content > li {
+  list-style-type: none; }
+
+div.products.category-jewellery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+  div.products.category-jewellery .product-item.jewellery {
+    cursor: pointer;
+    height: 200px;
+    margin: 2vw;
+    width: 200px; }
+    div.products.category-jewellery .product-item.jewellery:hover, div.products.category-jewellery .product-item.jewellery:focus {
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%); }
+      div.products.category-jewellery .product-item.jewellery:hover .product-item-info, div.products.category-jewellery .product-item.jewellery:focus .product-item-info {
+        display: block; }
+    div.products.category-jewellery .product-item.jewellery .product-item-image {
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+      width: 100%; }
+      div.products.category-jewellery .product-item.jewellery .product-item-image img {
+        height: auto;
+        max-height: 100%;
+        min-height: 100%;
+        width: auto;
+        min-width: 100%; }
+    div.products.category-jewellery .product-item.jewellery .product-item-info {
+      background: rgba(0, 0, 0, 0.5);
+      display: none;
+      position: relative; }
+    div.products.category-jewellery .product-item.jewellery .product-item-price {
+      color: white;
+      display: block;
+      font-size: 1.5em;
+      margin-left: 5px;
+      position: absolute;
+      top: 5px;
+      z-index: 1; }
+    div.products.category-jewellery .product-item.jewellery .product-item-name {
+      color: #fff;
+      display: flex;
+      align-items: flex-end;
+      height: 200px;
+      margin-top: -200px;
+      -webkit-margin-after: 0;
+      padding: 5px;
+      width: 200px;
+      z-index: 1; }
+      div.products.category-jewellery .product-item.jewellery .product-item-name p {
+        z-index: 1; }
+
+footer.home-footer {
+  background: transparent; }
+
+footer .inner {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between; }
+
+footer nav #menu-footer-menu {
+  display: flex;
+  flex-direction: row; }
+  footer nav #menu-footer-menu li a {
+    padding: 5px 10px; }
+
+footer .aimhigher-logo {
+  padding: 0 20px 10px 0; }
+  footer .aimhigher-logo img {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    float: right;
+    width: 40vw;
+    max-width: 200px; }
+    footer .aimhigher-logo img:hover {
+      filter: grayscale(0);
+      -webkit-filter: grayscale(0); }
+
+.primary-navigation {
+  position: absolute;
+  top: 18vh;
+  z-index: 1; }
+  .primary-navigation ul.menu.active {
+    display: block; }
+  .primary-navigation ul.menu > li a {
+    font-size: 10vh;
+    height: 25vh;
+    line-height: 25vh; }
+
+@media screen and (min-width: 480px) {
+  .home_nav .menu li.menu-item-17 {
+    background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/jewellery_480.jpg"); }
+  .home_nav .menu li.menu-item-18 {
+    background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/music_480.jpg"); }
+  .home_nav .menu li.menu-item-19 {
+    background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/photography_480.jpg"); } }
+
+@media screen and (min-width: 640px) {
+  .home_nav .menu li.menu-item-17 {
+    background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/jewellery_640.jpg");
+    background-position: 100% 90%; }
+  .home_nav .menu li.menu-item-18 {
+    background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/music_640.jpg"); }
+  .home_nav .menu li.menu-item-19 {
+    background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/photography_640.jpg"); } }
+
+@media screen and (min-width: 768px) {
+  nav {
+    flex-direction: row; }
+  header.site-header {
+    flex-direction: row;
+    justify-content: space-around;
+    height: 20vh;
+    min-height: 70px; }
+    header.site-header .primary-navigation {
+      flex-wrap: wrap;
+      position: static;
+      width: 50vw; }
+      header.site-header .primary-navigation .mobile-menu {
+        display: none; }
+    header.site-header .menu {
+      display: flex;
+      flex-direction: row; }
+      header.site-header .menu li {
+        width: 30%; }
+        header.site-header .menu li a {
+          font-size: 2vw;
+          line-height: normal;
+          height: auto; }
+    header.site-header .sidebar .widget_custom_menu_wizard ul.menu-widget {
+      flex-direction: row;
+      flex-wrap: wrap; }
+      header.site-header .sidebar .widget_custom_menu_wizard ul.menu-widget li {
+        margin-left: 20px; }
+        header.site-header .sidebar .widget_custom_menu_wizard ul.menu-widget li a {
+          padding: 5px; }
+  .site-content {
+    margin-top: 0px; }
+  footer {
+    height: 10vh; }
+  .inner {
+    margin: 0 auto;
+    width: 80vw; }
+  .nav-item {
+    font-size: 4vh;
+    padding-left: 2vw; }
+  .logo {
+    margin-bottom: 0; }
+    .logo .site-logo {
+      height: 12vh; }
+  .container {
+    margin-left: 10vw; }
+  .site-content .content-area {
+    min-height: 70vh;
+    order: 1;
+    width: 100%; }
+  .entry-header {
+    margin-right: 0; }
+  div.content-home {
+    width: 100%; }
+  .home_nav .menu {
+    flex-direction: row; }
+    .home_nav .menu li {
+      display: flex;
+      margin-bottom: 0; }
+      .home_nav .menu li.menu-item-17 {
+        background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/jewellery.jpg");
+        background-position: 100%; }
+      .home_nav .menu li.menu-item-18 {
+        background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/music.jpg");
+        background-position: 50%; }
+      .home_nav .menu li.menu-item-19 {
+        background-image: url("/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/images/photography.jpg");
+        background-position: 75% 0%; }
+      .home_nav .menu li a {
+        height: 90vh;
+        padding-top: 45vh;
+        width: 30vw; }
+  article.has-post-thumbnail .entry-thumbnail {
+    display: inline-block;
+    width: 49.5%; }
+  article.has-post-thumbnail .entry-content {
+    display: inline-block;
+    padding: 0 0 0 30px;
+    width: 50%; }
+  .entry-content, article.etsy_products {
+    width: 1000px; }
+  .filter-buttons {
+    justify-content: flex-end; }
+    .filter-buttons input {
+      margin: 0 20px; }
+  article.etsy_products {
+    flex-direction: row; }
+    article.etsy_products .entry-thumbnail {
+      height: auto;
+      width: 50%; }
+      article.etsy_products .entry-thumbnail img {
+        height: auto;
+        margin: 0;
+        width: 100%; }
+    article.etsy_products h1 {
+      font-size: 2em; }
+    article.etsy_products .post-content {
+      padding: 0 0 0 30px; }
+    article.etsy_products .jewellery-content {
+      padding: 0 10px;
+      width: 50%; }
+  .submenu .widget_custom_menu_wizard ul.menu-widget {
+    flex-direction: row;
+    font-size: 1.6vw; }
+    .submenu .widget_custom_menu_wizard ul.menu-widget li {
+      margin-left: 20px; }
+      .submenu .widget_custom_menu_wizard ul.menu-widget li:nth-last-child(3) {
+        border-left: 1px solid rgba(0, 0, 0, 0.7);
+        padding-left: 20px;
+        padding-top: 0; }
+  div.products.category-jewellery .product-item.jewellery {
+    height: 20vh;
+    width: 20vh; }
+    div.products.category-jewellery .product-item.jewellery .product-item-name {
+      height: 20vh;
+      margin-top: -20vh;
+      width: 20vh; }
+  footer .inner {
+    flex-direction: row; }
+  footer .aimhigher-logo {
+    padding: 0 10px 10px 0; }
+    footer .aimhigher-logo img {
+      float: none;
+      width: 100%; } }
+
+@media screen and (min-width: 960px) {
+  header.site-header .primary-navigation {
+    justify-content: flex-end;
+    width: 80vw; }
+    header.site-header .primary-navigation .menu-home-page-container {
+      width: 50vw; }
+    header.site-header .primary-navigation .sidebar .menu-home-page-container {
+      width: 100%; }
+      header.site-header .primary-navigation .sidebar .menu-home-page-container ul.menu-widget {
+        flex-wrap: nowrap; }
+        header.site-header .primary-navigation .sidebar .menu-home-page-container ul.menu-widget li {
+          font-size: 1.3vw; }
+  div.submenu {
+    display: block;
+    width: 100%; }
+    div.submenu.mobile {
+      display: none; }
+  .site-content {
+    min-height: 79vh; }
+  .photography .wpmf-gallerys .wpmf-gallery-item {
+    min-height: 260px; } }
+
+@media screen and (min-width: 1260px) {
+  header.site-header .primary-navigation .sidebar .menu-home-page-container ul.menu-widget li {
+    font-size: 15px;
+    margin-top: 0; }
+  div.submenu {
+    width: auto; }
+  .content-area {
+    width: 1200px; }
+    .content-area.photography {
+      width: 100%; } }
 
 /*# sourceMappingURL=../maps/main.css.map */

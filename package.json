@@ -18,9 +18,12 @@
   "homepage": "https://github.com/amykapernick/nadinesmithstudio#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-sass": "^2.3.2"
+    "gulp-replace": "^0.5.4",
+    "gulp-sass": "^2.3.2",
+    "gulp-string-replace": "^0.4.0"
   },
   "dependencies": {
-    "packery": "^2.1.1"
+    "packery": "^2.1.1",
+    "gulp-install": "~0.6.0"
   }
 }

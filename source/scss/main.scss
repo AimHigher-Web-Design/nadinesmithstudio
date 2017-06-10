@@ -1,112 +1,55 @@
-// Imports
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-// Variables
+//Imports
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Stalemate');
+
+//Screen Sizes
+$mobile: 320px;
+$mobile_wide: 480px;
+$tablet: 640px;
+$tablet_wide: 768px;
+$desktop: 960px;
+$desktop_wide: 1260px;
+
+//Variables
 $folders: '/nadinesmithstudio/wp-content/themes/nadinesmithstudio/resources/';
-$imagewidth: 15vw;
-$inner: 80vw;
 
-  //Fonts
-  $font_light: 200 12em 'Raleway', Arial, sans-serif;
-  $font_regular: 400 12em 'Raleway', Arial, sans-serif;
-  $font_medium: 600 12em 'Raleway', Arial, sans-serif;
-  $font_bold: 800 12em 'Raleway', Arial, sans-serif;
-  $font_headings: 1000 30em 'Raleway', Arial, sans-serif;
+//Fonts
+$font_light: 300 1em 'Open Sans', Arial, sans-serif;
+$font_regular: 400 1em 'Open Sans', Arial, sans-serif;
+$font_bold: 700 1em 'Open Sans', Arial, sans-serif;
+$font_headings: $font_bold;
+$font_sign: 400 1em 'Stalemate', cursive;
 
-  //Colours
+//Colours
 
 // Mixins
-
-
-//HTML Tags
-* {
-  box-sizing: border-box;
+@mixin rotate-images($deg) {
+transform: rotate($deg);
+  -webkit-transform: rotate($deg);
+  -moz-transform: rotate($deg);
+  -ms-transform: rotate($deg);
+  -o-transform: rotate($deg);
 }
 
-body {
-  background-image: url('/images/background.jpg');
-  font: $font_regular;
-  width: 100%;
+//Include Files
+@import 'booking-form';
+@import '320';
+
+@media screen and (min-width: $mobile_wide) {
+  @import '480';
 }
 
-h2 {
-  font: $font_headings;
+@media screen and (min-width: $tablet) {
+  @import '640';
 }
 
-a {
-  font: $font_regular;
+@media screen and (min-width: $tablet_wide) {
+  @import '768';
 }
 
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+@media screen and (min-width: $desktop) {
+  @import '960';
 }
 
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
+@media screen and (min-width: $desktop_wide) {
+  @import '1260';
 }
-
-//Classes
-.inner {
-  width: $inner;
-}
-
-.nav-item {
-  font-size: 4vh;
-  display: inline-block;
-  padding-left: 2vw;
-}
-
-.site-logo {
-  width: 30vw;
-  padding-left: 10vw;
-}
-
-.container {
-  width: 75vw;
-  margin-left: 10vw;
-}
-
-.home_nav {
-  width: 100%;
-  .menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    list-style: none;
-    li {
-      align-items: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      display: flex;
-      justify-content: center;
-      height: 90vh;
-      text-decoration: none;
-      width: 30vw;
-
-      a {
-        font-size: 3em;
-        text-decoration: none;
-      }
-    }
-
-    .menu-item-17 {
-      background-image: url($folders + 'images/jewellery.jpg');
-      background-position: 100% 100%;
-    }
-
-    .menu-item-18 {
-      background-image: url($folders + 'images/music.jpg');
-      background-position: 100% 100%;
-    }
-
-    .menu-item-19 {
-      background-image: url($folders + 'images/photography.jpg');
-    }
-  }
-}
-
-//IDs

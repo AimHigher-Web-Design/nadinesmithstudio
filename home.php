@@ -10,7 +10,7 @@ Template Name: Home Page
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area content-home">
 		<main id="main" class="site-main" role="main">
 
 			<?php wp_nav_menu( array( 'theme_location' => 'home-menu', 'container_class' => 'home_nav' ) ); ?>

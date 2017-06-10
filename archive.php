@@ -1,49 +1,89 @@
 <?php
 /**
- * The template for displaying archive pages.
+ * Template Name: Jewellery
  *
- * Learn more: http://codex.wordpress.org/Template_Hierarchy
+ *
+ * The page template for jewellery
+ *
+ * This is the template that displays all pages by default.
+ * Please note that this is the WordPress construct of pages
+ * and that other 'pages' on your WordPress site will use a
+ * different template.
  *
  * @package Nadine Smith Studio
  */
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<div id="primary" class="content-area">
+		<div class="site-main">
 
-		<?php if ( have_posts() ) : ?>
+			<form action="" method="GET" class="filter-buttons">
+				<span>Filter by:</span>
+				<input type="submit" value="See All" name="jewellery-type"></input>
+				<input type="submit" value="Bracelet" name="jewellery-type"></input>
+				<input type="submit" value="Necklace" name="jewellery-type"></input>
+				<input type="submit" value="Earrings" name="jewellery-type"></input>
+			</form>
 
-			<header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
-
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+			<div class="products category-jewellery">
 
 				<?php
-					/* Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					get_template_part( 'content', get_post_format() );
-				?>
+					$prodCat = "See All";
 
-			<?php endwhile; ?>
+					// echo $prodCat.before;
 
-			<?php boardwalk_paging_nav(); ?>
+					if (isset($_GET["jewellery-type"])) {
+						$prodCat = $_GET["jewellery-type"];
+						// echo $prodCat.assigned;
+					};
 
-		<?php else : ?>
+					// echo $prodCat.assignedafter;
 
-			<?php get_template_part( 'content', 'none' ); ?>
+					// echo $_POST[3].name;
 
-		<?php endif; ?>
+					// echo $prodCat.cat;
+
+					$type = 'etsy_products';
+
+					$args=array(
+			  		'post_type' => $type,
+			  		'post_status' => 'publish',
+			  		'posts_per_page' => -1,
+			  		'caller_get_posts'=> 1,
+						'etsy_category' => $prodCat
+					);
+					$my_query = null;
+					$my_query = new WP_Query($args);
+					if( $my_query->have_posts() ) {
+			  		while ($my_query->have_posts()) : $my_query->the_post(); ?>
+
+					<div class="product-item jewellery">
+						<a href="<?php echo get_post_permalink(get_the_ID()); ?>">
+							<div class="product-item-image">
+								<?php echo get_the_post_thumbnail( get_the_ID()); ?>
+							</div>
+							<div class="product-item-info">
+								<div class="product-item-price">
+									$ <?php echo get_post_meta( get_the_ID(), '_etsy_product_price', true ); ?>
+								</div>
+								<div class="product-item-name">
+									<p><?php the_title(); ?></p>
+								</div>
+							</div>
+						</a>
+					</div>
+
+			    <?php
+			  		endwhile;
+					}
+					wp_reset_query();  // Restore global post data stomped by the_post().
+					?>
+
+				</div>
 
 		</main><!-- #main -->
-	</section><!-- #primary -->
+	</div><!-- #primary -->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
