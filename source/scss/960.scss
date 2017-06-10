@@ -32,6 +32,12 @@ div.submenu {
   }
 }
 
+.site-content {
+  .content-area {
+    min-height: 100 - $header - $footer;
+  }
+}
+
 .photography {
   .wpmf-gallerys {
     .wpmf-gallery-item {

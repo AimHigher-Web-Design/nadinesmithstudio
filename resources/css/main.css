@@ -600,6 +600,8 @@ footer .aimhigher-logo {
     width: 100%; }
     div.submenu.mobile {
       display: none; }
+  .site-content .content-area {
+    min-height: 79vh; }
   .photography .wpmf-gallerys .wpmf-gallery-item {
     min-height: 260px; } }
 
