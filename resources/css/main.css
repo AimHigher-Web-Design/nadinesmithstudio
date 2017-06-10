@@ -19,6 +19,8 @@ body {
   background-color: rgba(253, 245, 230, 0.6);
   font: 400 1em "Open Sans", Arial, sans-serif;
   width: 100%; }
+  body.home .site-content {
+    margin-top: 0; }
 
 h1 {
   font-size: 2em; }
@@ -64,14 +66,6 @@ header.site-header {
     align-items: center;
     left: 0;
     width: 100%; }
-    header.site-header .primary-navigation .mobile-menu {
-      background: #ffe7bc;
-      background: rgba(255, 231, 188, 0.5);
-      box-shadow: 2px 2px 1px black;
-      font-size: 1.4em;
-      text-align: center;
-      text-transform: uppercase;
-      width: 100px; }
   header.site-header .menu {
     display: none;
     flex-direction: column;
@@ -108,33 +102,46 @@ header.site-header {
       display: none; }
   header.site-header .sidebar {
     width: 100%; }
-    header.site-header .sidebar .widget_custom_menu_wizard ul.menu-widget {
-      display: inline;
-      display: flex;
-      flex-direction: row; }
-      header.site-header .sidebar .widget_custom_menu_wizard ul.menu-widget li {
-        margin-left: 20px; }
-        header.site-header .sidebar .widget_custom_menu_wizard ul.menu-widget li a {
-          padding: 5px; }
-        header.site-header .sidebar .widget_custom_menu_wizard ul.menu-widget li:nth-last-child(3) {
-          border-left: 1px solid rgba(0, 0, 0, 0.7);
-          padding-left: 20px; }
-        header.site-header .sidebar .widget_custom_menu_wizard ul.menu-widget li.category {
-          text-transform: uppercase; }
-          header.site-header .sidebar .widget_custom_menu_wizard ul.menu-widget li.category a {
-            font-weight: bold; }
+
+.mobile-menu, button, input[type='submit'], input[type='button'] {
+  background: #ffe7bc;
+  background: rgba(255, 231, 188, 0.5);
+  box-shadow: 2px 2px 1px black;
+  font-size: 1.4em;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100px; }
+
+.submenu .widget_custom_menu_wizard ul.menu-widget {
+  display: inline;
+  display: flex;
+  flex-direction: column;
+  -webkit-padding-start: 0; }
+  .submenu .widget_custom_menu_wizard ul.menu-widget li {
+    margin-top: 20px;
+    text-align: center; }
+    .submenu .widget_custom_menu_wizard ul.menu-widget li.category {
+      text-transform: uppercase; }
+      .submenu .widget_custom_menu_wizard ul.menu-widget li.category a {
+        font-weight: bold; }
+    .submenu .widget_custom_menu_wizard ul.menu-widget li a {
+      padding: 5px; }
+    .submenu .widget_custom_menu_wizard ul.menu-widget li:nth-last-child(3) {
+      padding-top: 10px; }
 
 .mobile-menu.active + .menu-home-page-container {
   display: block; }
 
 .site-content {
-  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
   margin-top: 60px; }
   .site-content .content-area {
-    min-height: 79vh; }
+    order: -1; }
 
 footer {
-  height: 1vh; }
+  height: 1vh;
+  order: 99; }
 
 .inner {
   margin: 0 auto;
@@ -154,6 +161,11 @@ footer {
 
 .menu {
   list-style: none; }
+
+div.submenu {
+  display: none; }
+  div.submenu.mobile {
+    display: block; }
 
 .container {
   width: 75vw;
@@ -229,6 +241,28 @@ article.has-post-thumbnail .entry-content {
   vertical-align: top;
   width: 90%; }
 
+.nf-form-cont .nf-form-wrap .nf-form-layout .nf-form-content nf-field .nf-field .field-wrap input, .nf-form-cont .nf-form-wrap .nf-form-layout .nf-form-content nf-field .nf-field .field-wrap textarea {
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  font: 400 1em "Open Sans", Arial, sans-serif;
+  padding: 10px; }
+  .nf-form-cont .nf-form-wrap .nf-form-layout .nf-form-content nf-field .nf-field .field-wrap input[type='button'], .nf-form-cont .nf-form-wrap .nf-form-layout .nf-form-content nf-field .nf-field .field-wrap textarea[type='button'] {
+    background: #ffe7bc;
+    background: rgba(255, 231, 188, 0.5); }
+  .nf-form-cont .nf-form-wrap .nf-form-layout .nf-form-content nf-field .nf-field .field-wrap input:focus, .nf-form-cont .nf-form-wrap .nf-form-layout .nf-form-content nf-field .nf-field .field-wrap textarea:focus {
+    outline: none; }
+
+.nf-form-cont .nf-form-wrap .nf-form-layout .nf-form-content nf-field .nf-field .field-wrap.nf-error input, .nf-form-cont .nf-form-wrap .nf-form-layout .nf-form-content nf-field .nf-field .field-wrap.nf-error textarea {
+  border: 1px solid #FF0037; }
+
+.nf-form-cont .nf-form-wrap .nf-form-layout .nf-form-content nf-field .nf-field .field-wrap.nf-pass input, .nf-form-cont .nf-form-wrap .nf-form-layout .nf-form-content nf-field .nf-field .field-wrap.nf-pass textarea {
+  border: 1px solid #5BE019; }
+  .nf-form-cont .nf-form-wrap .nf-form-layout .nf-form-content nf-field .nf-field .field-wrap.nf-pass input:focus, .nf-form-cont .nf-form-wrap .nf-form-layout .nf-form-content nf-field .nf-field .field-wrap.nf-pass textarea:focus {
+    border: none; }
+
+.nf-form-cont .nf-form-wrap .nf-form-layout .nf-form-content nf-field .nf-after-field {
+  display: none; }
+
 .entry-content, article.etsy_products {
   margin-left: auto;
   margin-right: auto;
@@ -283,7 +317,6 @@ article.etsy_products {
   max-width: 100vw; }
   .photography .wpmf-gallerys .wpmf-gallery-item {
     height: auto;
-    min-height: 260px;
     width: auto;
     max-width: 520px;
     min-width: 260px; }
@@ -299,6 +332,12 @@ article.etsy_products {
       max-width: 100vw; }
     .photography .wpmf-gallerys .gallery .flex-control-nav {
       display: none; }
+
+.page-template-photography .wpmf-gallerys .wpmfslide .wpmf-slides .wpmf-gallery-item img {
+  max-height: 60vh; }
+
+.page-template-photography .wpmf-gallerys .wpmfslide .flex-control-nav {
+  bottom: -60px; }
 
 .widget_custom_menu_wizard ul {
   list-style-type: none; }
@@ -419,13 +458,16 @@ footer .aimhigher-logo {
           line-height: normal;
           height: auto; }
     header.site-header .sidebar .widget_custom_menu_wizard ul.menu-widget {
-      flex-direction: row; }
+      flex-direction: row;
+      flex-wrap: wrap; }
       header.site-header .sidebar .widget_custom_menu_wizard ul.menu-widget li {
         margin-left: 20px; }
         header.site-header .sidebar .widget_custom_menu_wizard ul.menu-widget li a {
           padding: 5px; }
   .site-content {
     margin-top: 20px; }
+  footer {
+    height: 10vh; }
   .inner {
     margin: 0 auto;
     width: 80vw; }
@@ -439,6 +481,7 @@ footer .aimhigher-logo {
   .container {
     margin-left: 10vw; }
   .content-area {
+    min-height: 70vh;
     width: 100%; }
   .entry-header {
     margin-right: 0; }
@@ -467,6 +510,8 @@ footer .aimhigher-logo {
     display: inline-block;
     padding: 0 0 0 30px;
     width: 50%; }
+  .photography .wpmf-gallerys .wpmf-gallery-item {
+    min-height: 260px; }
   .entry-content, article.etsy_products {
     width: 1000px; }
   .filter-buttons {
@@ -489,6 +534,14 @@ footer .aimhigher-logo {
     article.etsy_products .jewellery-content {
       padding: 0 10px;
       width: 50%; }
+  .widget_custom_menu_wizard ul.menu-widget {
+    flex-direction: row;
+    font-size: 1.6vw; }
+    .widget_custom_menu_wizard ul.menu-widget li {
+      margin-left: 20px; }
+      .widget_custom_menu_wizard ul.menu-widget li:nth-last-child(3) {
+        border-left: 1px solid rgba(0, 0, 0, 0.7);
+        padding-left: 20px; }
   div.products.category-jewellery .product-item.jewellery {
     height: 20vh;
     width: 20vh; }
@@ -503,6 +556,12 @@ footer .aimhigher-logo {
     footer .aimhigher-logo img {
       float: none;
       width: 100%; } }
+
+@media screen and (min-width: 960px) {
+  div.submenu {
+    display: block; }
+    div.submenu.mobile {
+      display: none; } }
 
 @media screen and (min-width: 1260px) {
   .content-area {

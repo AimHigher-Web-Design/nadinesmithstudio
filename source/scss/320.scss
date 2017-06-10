@@ -23,6 +23,12 @@ body {
     // background-position: center top;
   font: $font_regular;
   width: 100%;
+
+  &.home {
+    .site-content {
+      margin-top: 0;
+    }
+  }
 }
 
 h1 {
@@ -88,18 +94,7 @@ header.site-header {
       align-items: center;
       // flex-wrap: wrap;
       left: 0;
-      width: 100%;
-
-      .mobile-menu {
-        background: rgb(255, 231, 188);
-        background: rgba(255, 231, 188, 0.5);
-        box-shadow: 2px 2px 1px black;
-        font-size: 1.4em;
-        // margin-bottom: 10px;
-        text-align: center;
-        text-transform: uppercase;
-        width: 100px;
-      }     
+      width: 100%;  
     }
 
     .menu {
@@ -157,33 +152,47 @@ header.site-header {
 
   .sidebar {
     width: 100%;
+  }
+}
 
+.mobile-menu, button, input[type='submit'], input[type='button'] {
+  background: rgb(255, 231, 188);
+  background: rgba(255, 231, 188, 0.5);
+  box-shadow: 2px 2px 1px black;
+  font-size: 1.4em;
+  // margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100px;
+}   
+
+.submenu {
     .widget_custom_menu_wizard {
-      ul.menu-widget {
-        display: inline;
-        display: flex;
-        flex-direction: row;
+    ul.menu-widget {
+      display: inline;
+      display: flex;
+      flex-direction: column;
+      -webkit-padding-start: 0;
 
-        li {
-          margin-left: 20px;
+      li {
+        margin-top: 20px;
+        text-align: center;
+
+        &.category {
+          // font-size: 1.3em;
+          text-transform: uppercase;
 
           a {
-            padding: 5px;
+            font-weight: bold;
           }
+        }
 
-          &:nth-last-child(3) {
-            border-left: 1px solid rgba(0, 0, 0, 0.7);
-            padding-left: 20px;
-          }
+        a {
+          padding: 5px;
+        }
 
-          &.category {
-            // font-size: 1.3em;
-            text-transform: uppercase;
-
-            a {
-              font-weight: bold;
-            }
-          }
+        &:nth-last-child(3) {
+          padding-top: 10px;
         }
       }
     }
@@ -195,17 +204,21 @@ header.site-header {
 }
 
 .site-content {
-  min-height: 100 - $header;
+  display: flex;
+    flex-direction: column;
+  // min-height: 100 - $header;
   margin-top: 60px;
 
   .content-area {
-    min-height: 100 - $header - $footer;
+    // min-height: 100 - $header - $footer;
+    order: -1;
   }
 }
 
 footer {
   // background-color: rgb(230, 231, 223);
   height: $footer;
+  order: 99;
 }
 
 //Classes
@@ -233,6 +246,15 @@ footer {
 
 .menu {
   list-style: none;
+}
+
+div.submenu {
+  display: none;
+
+  &.mobile {
+    display: block;
+    // order: 2;
+  }
 }
 
 .container {
@@ -343,6 +365,58 @@ article.has-post-thumbnail {
   }
 }
 
+.nf-form-cont {
+  .nf-form-wrap {
+    .nf-form-layout {
+      .nf-form-content {
+        nf-field {
+          .nf-field {
+            .field-wrap {
+              input, textarea {
+                background: rgba(#fff, 0.8);
+                border: none;
+                font: $font-regular;
+                padding: 10px;
+
+                &[type='button'] {
+                  background: rgb(255, 231, 188);
+                  background: rgba(255, 231, 188, 0.5);
+                //   border: 1px solid rgb(154, 149, 149);
+                //   color: #000;
+                }
+
+                &:focus {
+                  outline: none;
+                }
+              }
+
+              &.nf-error {
+                input, textarea {
+                  border: 1px solid #FF0037;
+                }
+              }
+
+              &.nf-pass {
+                input, textarea {
+                  border: 1px solid #5BE019;
+
+                  &:focus {
+                    border: none;
+                  }
+                }
+              }
+            }
+          }
+
+          .nf-after-field {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
 .entry-content, article.etsy_products {
   margin-left: auto;
   margin-right: auto;
@@ -419,7 +493,7 @@ article.etsy_products {
     .wpmf-gallery-item {
       height: auto;
         // max-height: 520px;
-        min-height: 260px;
+        // min-height: 260px;
       width: auto;
         max-width: 520px;
         min-width: 260px;
@@ -445,6 +519,24 @@ article.etsy_products {
       }
     }
   }    
+}
+
+.page-template-photography {
+  .wpmf-gallerys {
+    .wpmfslide {
+      .wpmf-slides {
+        .wpmf-gallery-item {
+          img {
+            max-height: 60vh;
+          }
+        }
+      }
+
+      .flex-control-nav {
+        bottom: -60px;
+      }
+    }
+  }
 }
 
 .widget_custom_menu_wizard {

@@ -1,0 +1,7 @@
+div.submenu {
+  display: block;
+
+  &.mobile {
+    display: none;
+  }
+}

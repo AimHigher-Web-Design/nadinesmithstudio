@@ -221,6 +221,12 @@ register_sidebar( array(
     'name' => 'Sub-menu'
 ));
 
+//Mobile submenu widget area
+register_sidebar( array(
+    'id' => 'submenu-mobile',
+    'name' => 'Sub-menu Mobile'
+));
+
 //Contact form widget area
 register_sidebar( array(
     'id' => 'contact',
