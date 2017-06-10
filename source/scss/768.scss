@@ -233,6 +233,21 @@ div.content-home {
       margin-bottom: 0;
       // text-decoration: none;
 
+      &.menu-item-17 {
+          background-image: url($folders + 'images/jewellery.jpg');
+          background-position: 100%;
+      }
+
+      &.menu-item-18 {
+          background-image: url($folders + 'images/music.jpg');
+          background-position: 50%;
+      }
+
+      &.menu-item-19 {
+          background-image: url($folders + 'images/photography.jpg');
+          background-position: 75% 0%;
+      }
+
       a {
         // color: #fff;
         // font-size: 3em;
@@ -246,21 +261,6 @@ div.content-home {
       ul {
         // display: none;
       }
-    }
-
-    .menu-item-17 {
-      background-image: url($folders + 'images/jewellery.jpg');
-        background-position: 100%;
-    }
-
-    .menu-item-18 {
-      // background-image: url($folders + 'images/music.jpg');
-      background-position: 50%;
-    }
-
-    .menu-item-19 {
-      // background-image: url($folders + 'images/photography.jpg');
-      background-position: 75% 0%;
     }
   }
 }
@@ -285,14 +285,6 @@ article.has-post-thumbnail {
     // text-align: right;
     // vertical-align: top;
     width: 50%;
-  }
-}
-
-.photography {
-  .wpmf-gallerys {
-    .wpmf-gallery-item {
-      min-height: 260px;
-    }
   }
 }
 

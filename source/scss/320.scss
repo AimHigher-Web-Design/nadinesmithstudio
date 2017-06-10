@@ -112,19 +112,19 @@ header.site-header {
         width: 100%;
 
         &.menu-item-17 {
-          background-image: url($folders + 'images/jewellery-horizontal.jpg');
+          background-image: url($folders + 'images/jewellery_320.jpg');
             background-position: 0 50%;
             background-size: cover;
         }
 
         &.menu-item-18 {
-          background-image: url($folders + 'images/music.jpg');
+          background-image: url($folders + 'images/music_320.jpg');
             background-position: 100% 67%;
             background-size: cover;
         }
 
         &.menu-item-19 {
-          background-image: url($folders + 'images/photography.jpg');
+          background-image: url($folders + 'images/photography_320.jpg');
             background-position: 0 38%;
             background-size: cover;
         }
@@ -327,17 +327,17 @@ div.content-home {
     }
 
     .menu-item-17 {
-      background-image: url($folders + 'images/jewellery-horizontal.jpg');
+      background-image: url($folders + 'images/jewellery_320.jpg');
         background-position: 100% 15%;
     }
 
     .menu-item-18 {
-      background-image: url($folders + 'images/music.jpg');
+      background-image: url($folders + 'images/music_320.jpg');
         background-position: 100% 75%;
     }
 
     .menu-item-19 {
-      background-image: url($folders + 'images/photography.jpg');
+      background-image: url($folders + 'images/photography_320.jpg');
         background-position: 75% 40%;
     }
   }
@@ -503,12 +503,12 @@ article.etsy_products {
     max-width: 100vw;
 
     .wpmf-gallery-item {
-      height: auto;
-        // max-height: 520px;
-        // min-height: 260px;
-      width: auto;
-        max-width: 520px;
-        min-width: 260px;
+        height: auto;
+          // max-height: 520px;
+          // min-height: 260px;
+        width: auto;
+          max-width: 520px;
+          min-width: 260px;
 
       .wpmf-front-box.top {
         display: none;
