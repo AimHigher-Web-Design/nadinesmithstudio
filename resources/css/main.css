@@ -8,9 +8,6 @@
 .nf-form-wrap textarea {
   max-width: 500px; }
 
-.menu-item-587, .menu-item-585, .menu-item-586 {
-  display: none; }
-
 ::-webkit-scrollbar {
   display: none; }
 
@@ -119,8 +116,13 @@ header.site-header {
         margin-left: 20px; }
         header.site-header .sidebar .widget_custom_menu_wizard ul.menu-widget li a {
           padding: 5px; }
+        header.site-header .sidebar .widget_custom_menu_wizard ul.menu-widget li:nth-last-child(3) {
+          border-left: 1px solid rgba(0, 0, 0, 0.7);
+          padding-left: 20px; }
         header.site-header .sidebar .widget_custom_menu_wizard ul.menu-widget li.category {
-          font-size: 1.3em; }
+          text-transform: uppercase; }
+          header.site-header .sidebar .widget_custom_menu_wizard ul.menu-widget li.category a {
+            font-weight: bold; }
 
 .mobile-menu.active + .menu-home-page-container {
   display: block; }
@@ -285,6 +287,8 @@ article.etsy_products {
     width: auto;
     max-width: 520px;
     min-width: 260px; }
+    .photography .wpmf-gallerys .wpmf-gallery-item .wpmf-front-box.top {
+      display: none; }
   .photography .wpmf-gallerys .gallery {
     background: transparent;
     border: none; }
