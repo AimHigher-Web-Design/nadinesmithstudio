@@ -21,10 +21,6 @@
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<?php wp_head(); ?>
-
-<!--Google Captcha Script-->
-		<script src='https://www.google.com/recaptcha/api.js'></script>
-
 	</head>
 
 	<body <?php body_class(); ?>>
