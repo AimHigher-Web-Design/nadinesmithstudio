@@ -103,7 +103,7 @@ header.site-header {
   header.site-header .sidebar {
     width: 100%; }
 
-.mobile-menu, button, input[type='submit'], input[type='button'] {
+.mobile-menu, input[type='submit'], input[type='button'] {
   background: #ffe7bc;
   background: rgba(255, 231, 188, 0.5);
   box-shadow: 2px 2px 1px black;
