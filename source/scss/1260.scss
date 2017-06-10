@@ -1,5 +1,24 @@
 $inner_width: 1200px;
 
+header.site-header {
+    .primary-navigation {
+        .sidebar {
+            .menu-home-page-container {
+                ul.menu-widget {
+                    li {
+                        font-size: 15px;
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+div.submenu {
+    width: auto;
+}
+
 .content-area {
     width: $inner_width;
 

@@ -203,6 +203,14 @@ header.site-header {
   display: block;
 }
 
+.page-id-576, .page-id-10 {
+  header {
+    .submenu {
+      display: none;
+    }
+  }
+}
+
 .site-content {
   display: flex;
     flex-direction: column;
@@ -433,13 +441,17 @@ article.has-post-thumbnail {
   max-width: 100%;
 
     input {
-      background-color: transparent;
+      background: none;
       border: none;
+      box-shadow: none;
       color: #252525;
       cursor: pointer;
+      font-size: 1em;
       margin: 10px 20px;
       padding: 0;
-      width: 60px;
+      text-align: left;
+      text-transform: none;
+      width: auto;
 
       &:hover, &:focus, &:active {
         font-weight: bold;

@@ -1,5 +1,31 @@
+header.site-header {
+    .primary-navigation {
+        justify-content: flex-end;
+        width: 80vw;
+
+        .menu-home-page-container {
+            width: 50vw;
+        }
+
+        .sidebar {
+            .menu-home-page-container {
+                width: 100%;
+
+                ul.menu-widget {
+                    flex-wrap: nowrap;
+
+                    li {
+                        font-size: 1.3vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
 div.submenu {
   display: block;
+  width: 100%;
 
   &.mobile {
     display: none;

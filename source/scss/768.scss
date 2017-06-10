@@ -150,7 +150,7 @@ header.site-header {
 
 .site-content {
   // min-height: 80vh;
-  margin-top: 20px;
+  margin-top: 0px;
 
   .content-area {
     // min-height: 70vh;
@@ -194,12 +194,15 @@ footer {
   margin-left: 10vw;
 }
 
-.content-area {
-  // margin-top: 20vh;
-  // margin-left: auto;
-  // margin-right: auto;
-  min-height: 100 - $header - $footer;
-  width: 100%;
+.site-content {
+  .content-area {
+    // margin-top: 20vh;
+    // margin-left: auto;
+    // margin-right: auto;
+    min-height: 100 - $header - $footer;
+    order: 1;
+    width: 100%;
+  }
 }
 
 .entry-header {
@@ -363,24 +366,27 @@ article.etsy_products {
   }
 }
 
-.widget_custom_menu_wizard {
-  ul.menu-widget {
-    flex-direction: row;
-    font-size: 1.6vw;
-
-    li {
-      margin-left: 20px;
-
-      &:nth-last-child(3) {
-        border-left: 1px solid rgba(0, 0, 0, 0.7);
-        padding-left: 20px;
-      }
-    }
-  }
-}
-
 .sidebar-content > li {
   // list-style-type: none;
+}
+
+.submenu {
+  .widget_custom_menu_wizard {
+    ul.menu-widget {
+      flex-direction: row;
+      font-size: 1.6vw;
+
+      li {
+        margin-left: 20px;
+
+        &:nth-last-child(3) {
+          border-left: 1px solid rgba(0, 0, 0, 0.7);
+          padding-left: 20px;
+          padding-top: 0;
+        }
+      }
+    }
+}
 }
 
 div.products.category-jewellery {

@@ -132,6 +132,9 @@ header.site-header {
 .mobile-menu.active + .menu-home-page-container {
   display: block; }
 
+.page-id-576 header .submenu, .page-id-10 header .submenu {
+  display: none; }
+
 .site-content {
   display: flex;
   flex-direction: column;
@@ -277,13 +280,17 @@ article.has-post-thumbnail .entry-content {
   margin-right: 2vw;
   max-width: 100%; }
   .filter-buttons input {
-    background-color: transparent;
+    background: none;
     border: none;
+    box-shadow: none;
     color: #252525;
     cursor: pointer;
+    font-size: 1em;
     margin: 10px 20px;
     padding: 0;
-    width: 60px; }
+    text-align: left;
+    text-transform: none;
+    width: auto; }
     .filter-buttons input:hover, .filter-buttons input:focus, .filter-buttons input:active {
       font-weight: bold;
       text-decoration: underline; }
@@ -465,7 +472,7 @@ footer .aimhigher-logo {
         header.site-header .sidebar .widget_custom_menu_wizard ul.menu-widget li a {
           padding: 5px; }
   .site-content {
-    margin-top: 20px; }
+    margin-top: 0px; }
   footer {
     height: 10vh; }
   .inner {
@@ -480,8 +487,9 @@ footer .aimhigher-logo {
       height: 12vh; }
   .container {
     margin-left: 10vw; }
-  .content-area {
+  .site-content .content-area {
     min-height: 70vh;
+    order: 1;
     width: 100%; }
   .entry-header {
     margin-right: 0; }
@@ -534,14 +542,15 @@ footer .aimhigher-logo {
     article.etsy_products .jewellery-content {
       padding: 0 10px;
       width: 50%; }
-  .widget_custom_menu_wizard ul.menu-widget {
+  .submenu .widget_custom_menu_wizard ul.menu-widget {
     flex-direction: row;
     font-size: 1.6vw; }
-    .widget_custom_menu_wizard ul.menu-widget li {
+    .submenu .widget_custom_menu_wizard ul.menu-widget li {
       margin-left: 20px; }
-      .widget_custom_menu_wizard ul.menu-widget li:nth-last-child(3) {
+      .submenu .widget_custom_menu_wizard ul.menu-widget li:nth-last-child(3) {
         border-left: 1px solid rgba(0, 0, 0, 0.7);
-        padding-left: 20px; }
+        padding-left: 20px;
+        padding-top: 0; }
   div.products.category-jewellery .product-item.jewellery {
     height: 20vh;
     width: 20vh; }
@@ -558,12 +567,29 @@ footer .aimhigher-logo {
       width: 100%; } }
 
 @media screen and (min-width: 960px) {
+  header.site-header .primary-navigation {
+    justify-content: flex-end;
+    width: 80vw; }
+    header.site-header .primary-navigation .menu-home-page-container {
+      width: 50vw; }
+    header.site-header .primary-navigation .sidebar .menu-home-page-container {
+      width: 100%; }
+      header.site-header .primary-navigation .sidebar .menu-home-page-container ul.menu-widget {
+        flex-wrap: nowrap; }
+        header.site-header .primary-navigation .sidebar .menu-home-page-container ul.menu-widget li {
+          font-size: 1.3vw; }
   div.submenu {
-    display: block; }
+    display: block;
+    width: 100%; }
     div.submenu.mobile {
       display: none; } }
 
 @media screen and (min-width: 1260px) {
+  header.site-header .primary-navigation .sidebar .menu-home-page-container ul.menu-widget li {
+    font-size: 15px;
+    margin-top: 0; }
+  div.submenu {
+    width: auto; }
   .content-area {
     width: 1200px; }
     .content-area.photography {
